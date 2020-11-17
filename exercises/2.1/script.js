@@ -1,4 +1,4 @@
 let student = "euMesmo";
 let studentSkills = 10;
-// Eu sou Tryber e arraso demais
+//Vou ter muito sucesso na programação. Todos digam "AMÉM!"! AMÉÉÉEÉM!!!!
 console.log("Sucesso!");
