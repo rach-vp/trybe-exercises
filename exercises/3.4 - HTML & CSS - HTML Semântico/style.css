@@ -11,9 +11,10 @@
     padding-left: 5%;
     text-align: center;
     position: relative;
-    font-size: 40px;
-    font-family: 'Indie Flower', cursive;
-    color: rgba(153, 43, 0, 0.746);
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #992b00be;
 }
 
 .main-title-centralizer {
@@ -22,6 +23,7 @@
     transform: translateY(-50%);
 }
 
+
 /* ID styles */
 
 #main-header {
@@ -29,4 +31,31 @@
     background-size: 100% 600px;
 }
 
+#main-sumary {
+    background-color: #992b00c2;
+}
+
 /* Inherit styles */
+
+#main-sumary li {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #0F6365;
+    width: 30%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#main-sumary a:link {
+    color: #0F6365;
+}
+
+#main-sumary a:visited {
+    color: #0F6365;
+}
+
+#main-sumary a:hover {
+    background-color: #ec5d24be;
+}
