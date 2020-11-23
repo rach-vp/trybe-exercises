@@ -1,0 +1,2 @@
+# Criação de várias páginas de acordo com os exercícios citados no conteúdo do bloco 3.3 - Seletores e posicionamento.
+# Foi colocado em prática o conteúdo ensinado no material de apoio disponível no curso de CSS da Khan Academy, onde cada pasta faz referência aos exercícios do seu respectivo módulo.
