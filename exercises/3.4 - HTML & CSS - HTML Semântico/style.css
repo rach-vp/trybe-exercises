@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+/* Tag styles */
+/* Class styles */
+
+.main-title {
+    /* Mesma altura da bg img pra não perder a qualidade */
+    height: 600px;
+    width: 50%;
+    padding-left: 5%;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    color: rgba(153, 43, 0, 0.746);
+}
+
+.main-title-centralizer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ID styles */
+
+#main-header {
+    background-image: url("pics/main-header-stomatopoda.png");
+    background-size: 100% 600px;
+}
+
+/* Inherit styles */
