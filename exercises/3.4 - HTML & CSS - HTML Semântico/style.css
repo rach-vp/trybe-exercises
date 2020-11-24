@@ -54,6 +54,11 @@
 .screen-divider {
     width: 50%;
 }
+
+.main-table {
+    margin: 15px auto;
+}
+
 /* ID styles */
 
 #main-header {
@@ -112,6 +117,17 @@
 #main-content p {
     text-indent: 50px;
     text-align: justify;
+}
+
+#main-content table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+.main-table th {
+    width: 120px;
+    background-color:#24c2c581;
 }
 
 #footer a:link, a:visited {
