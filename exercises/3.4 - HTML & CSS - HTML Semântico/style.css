@@ -25,15 +25,26 @@
 
 .div-subsection {
     overflow: auto;
+    position: relative;
+    height: 400px;
+}
+
+.subsection-content {
+    width:40%;
 }
 
 .section-img {
     float: right;
     width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
 .section-title {
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
