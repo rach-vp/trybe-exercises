@@ -14,7 +14,7 @@
     font-size: 50px;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    color: #992b00be;
+    color: #ff4800;
 }
 
 .main-title-centralizer {
@@ -23,6 +23,14 @@
     transform: translateY(-50%);
 }
 
+.div-section {
+    overflow: auto;
+}
+
+.section-img {
+    float: right;
+    width: 400px;
+}
 
 /* ID styles */
 
@@ -32,7 +40,16 @@
 }
 
 #main-sumary {
-    background-color: #992b00c2;
+    background-color: #ff4800;
+}
+
+#main-content {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+#aside-content {
+    float: right;
 }
 
 /* Inherit styles */
@@ -42,20 +59,23 @@
     font-size: 40px;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    color: #0F6365;
     width: 30%;
     text-align: center;
     text-decoration: underline;
 }
 
 #main-sumary a:link {
-    color: #0F6365;
+    color: #0c4344cc;
 }
 
 #main-sumary a:visited {
-    color: #0F6365;
+    color:  #0c4344cc;
 }
 
 #main-sumary a:hover {
-    background-color: #ec5d24be;
+    background-color: #24c2c581;
+}
+
+#main-content p {
+    text-indent: 50px;
 }
