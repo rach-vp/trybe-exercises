@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+}
+/* Tag styles */
+/* Class styles */
+
+.main-title {
+    /* Mesma altura da bg img pra não perder a qualidade */
+    height: 600px;
+    width: 50%;
+    padding-left: 5%;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #ff4800;
+}
+
+.content-centralizer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div-subsection {
+    overflow: auto;
+    position: relative;
+    height: 400px;
+}
+
+.subsection-content {
+    width:40%;
+}
+
+.section-img {
+    float: right;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-content-wrapper {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.right-footer-content {
+    left: 50%;
+}
+
+.social-media-icon {
+    height: 20px;
+}
+
+.screen-divider {
+    width: 50%;
+}
+
+.main-table {
+    margin: 15px auto;
+}
+
+/* ID styles */
+
+#main-header {
+    background-image: url("pics/main-header-stomatopoda.png");
+    background-size: 100% 600px;
+}
+
+#main-sumary {
+    background-color: #ff4800;
+}
+
+#main-content {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    padding: 5%;
+    background-color: #ffd0be9a;
+}
+
+#aside-content {
+    float: right;
+    position: sticky;
+    top: 0;
+}
+
+#footer {
+    clear: both;
+    height: 100px;
+    background-color: #ff4800;
+    color: #0c4344cc;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+}
+
+/* Inherit styles */
+
+#main-sumary li {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width: 30%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#main-sumary a:link, a:visited {
+    color: #0c4344cc;
+}
+
+#main-sumary a:hover {
+    background-color: #24c2c581;
+}
+
+#main-content p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+#main-content table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center; 
+}
+
+.main-table th {
+    width: 120px;
+    background-color:#24c2c581;
+}
+
+#footer a:link, a:visited {
+    color: #0c4344cc;
+}
+
+#footer a:hover {
+    background-color: #24c2c581;
+}
