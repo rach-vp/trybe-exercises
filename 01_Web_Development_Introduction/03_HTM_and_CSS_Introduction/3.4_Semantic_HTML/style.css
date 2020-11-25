@@ -51,11 +51,12 @@
 .footer-content-wrapper {
     display: inline-block;
     width: 40%;
-    text-align: center;
+    text-align: left;
 }
 
 .right-footer-content {
     left: 50%;
+    text-align: center;
 }
 
 .social-media-icon {
