@@ -1,5 +1,5 @@
-## Criação de várias páginas de acordo com os exercícios citados no conteúdo do bloco 3.3 - Seletores e posicionamento.
-## Foi colocado em prática o conteúdo ensinado no material de apoio disponível no curso de CSS da Khan Academy, onde cada pasta faz referência aos exercícios do seu respectivo módulo.
+## Criação de uma página web semanticamente correta de acordo com o que foi visto no bloco 3.4 - HTML semântico.
+## Foi desenvolvida uma página web falando sobre o camarão louva-deus, mas com o diferencial de dar fco para a semântica das tags HTML, o que, além de melhor o ranqueamento da páginas em ferramentas de pesquisa, torna-a acessível para pessoas com deficiência visual que necessitam do auxílio de um leitor de página para usufruir do conteúdo, por exemplo. Abaixo estão descritos os requisitos da página.
 
 O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre HTML semântico.
 Para tal, criaremos uma página que apresenta um dos animais mais impressionantes que existem: o Stomatopoda. A estilização da página fica a seu critério. 😉
