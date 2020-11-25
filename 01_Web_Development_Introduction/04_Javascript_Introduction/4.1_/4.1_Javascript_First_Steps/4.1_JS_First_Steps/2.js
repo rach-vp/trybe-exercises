@@ -1,7 +1,7 @@
 // Retorno qual é o maior dos dois números
 
-a = 2;
-b = 3;
+let a = 2;
+let b = 3;
 
 if (a > b) {
     console.log('O maior número é ' + a);

@@ -1,6 +1,6 @@
 // Retorno se o valor da variável é negativo, positivo ou nulo
 
-a = 0;
+let a = 0;
 
 if (a > 0) {
     console.log(a + ' é positivo.');

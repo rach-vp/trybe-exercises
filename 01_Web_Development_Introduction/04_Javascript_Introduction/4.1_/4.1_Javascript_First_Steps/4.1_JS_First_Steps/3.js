@@ -1,6 +1,6 @@
 // Retorno qual é o maior dos três números
 
-a = 2;
+let a = 2;
 b = 10;
 c = 3;
 
