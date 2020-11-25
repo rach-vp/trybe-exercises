@@ -6,13 +6,13 @@ Bonus: use somente um if.
 
 */ 
 
-let a = 6;
-let b = 2;
-let c = 4;
+let a = 5;
+let b = 1;
+let c = 78;
 
-if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
-    console.log('Há pelo menos um número ímpar nesse conjunto.');
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
+    console.log('Há pelo menos um número par nesse conjunto.');
 }
 else {
-    console.log('Não há nenhum número ímpar nesse conjunto.');
+    console.log('Não há nenhum número par nesse conjunto.');
 }
