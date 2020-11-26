@@ -1,4 +1,4 @@
-// Imprime a média aritmética dos elementos do array
+// Imprime o maior elemento do array
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let maior = 0;
