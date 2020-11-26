@@ -1,9 +1,8 @@
 # Resolução de alguns exercícios para exercitar a lógica de programação com arrays e loop for, conteúdo abordado no bloco 4.2
 
-Agora a prática
+#### Agora a prática
 
 Leia atentamente os enunciados e faça o que se pede! Você irá utilizar esse array para realizar os exercícios do 1 ao 7:
-Copiar
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
@@ -25,3 +24,26 @@ Descubra quantos valores ímpares existem no array e imprima o resultado. Caso n
 8 - Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
 
 9 - Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
+
+#### Bônus
+
+Para os próximos dois exercícios leia este artigo e tente entender o que está acontencedo no código abaixo:
+
+for (let i = 1; i < array.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (array[i] < array[j]) {
+      let position = array[i];
+
+      array[i] = array[j];
+      array[j] = position;
+    }
+  }
+}
+
+1 - Ordene o array numbers em ordem crescente e imprima seus valores;
+
+2 - Ordene o array numbers em ordem decrescente e imprima seus valores;
+
+3 - Agora você irá criar um novo array a partir do array numbers , sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push . O resultado deve ser o array abaixo:
+
+[45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
