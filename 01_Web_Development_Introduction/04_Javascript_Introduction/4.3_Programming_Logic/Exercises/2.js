@@ -20,9 +20,9 @@ if (n <=1 ) {
   for (let i = 1; i <= n; i += 1) {
     for (let j = 1; j <= i; j += 1) {
       if (j !== i) {
-        process.stdout.write('*')
+        process.stdout.write('*');
       } else {
-        console.log('*')
+        console.log('*');
       }
     }
   }
