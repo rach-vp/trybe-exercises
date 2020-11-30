@@ -11,8 +11,7 @@ console.log(`O maior número é ${higher(a , b)}`);
 function higher(a , b) {
   if (a > b) {
     return(a);
-} 
-else {
-    return(b);
-}
+  } else {
+      return(b);
+  }
 }
