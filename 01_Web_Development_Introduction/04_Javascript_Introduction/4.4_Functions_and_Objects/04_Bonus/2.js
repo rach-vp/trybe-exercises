@@ -16,19 +16,20 @@ function add(num1, num2) {
   if (str1.length !== str2.length) {
   /* The abstract used in this solving requires that the numbers has the same length in order to sweep
     among the elements beginning in the right to the left */
+    let strArray;
     if (str1.length > str2.length) {
       //Unshifting 0s lefts to the array won't change its number value
-      str2.split('');
-      while (str1.length > str2.length) {
-        str2.unshift('0');
+      strArray = str2.split('');
+      while (strArray.length < str2.length) {
+        strArray.unshift('0');
       }
-      str2.join('');
+      str2 = strArray.join('');
     } else {
-      str1.split('');
-      while (str1.length < str2.length) {
-        str1.unshift('0');
+      strArray = str1.split('');
+      while (strArray.length < str2.length) {
+        strArray.unshift('0');
       }
-      str2.join('');
+      str2 = strArray.join('');
     }
   }
   // Checking which of the strings will go at the upper space whem writing the sum operation
