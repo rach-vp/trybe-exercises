@@ -13,8 +13,8 @@ Crie uma função que receba uma string word e outra string ending . Verifique s
 
 function checkEnding (stringWord, stringEnd) {
   let check = true;
-  stringWord = stringWord.split('').reverse().join('');
-  stringEnd = stringEnd.split('').reverse().join('');
+  stringWord.split('').reverse().join('');
+  stringEnd.split('').reverse().join('');
   for (let index = stringEnd.length - 1; index >= 0; index -= 1) {
     if (stringWord[index] !== stringEnd[index]) {
       check = false;

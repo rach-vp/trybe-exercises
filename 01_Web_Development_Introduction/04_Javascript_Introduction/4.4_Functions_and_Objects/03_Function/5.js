@@ -10,7 +10,7 @@ Crie uma função que receba um array de inteiros e retorne o inteiro que mais s
 function checkRepetiton (array) {
   let maxRep = 0;
   let repElement;
-  array = array.sort();
+  array.sort();
   for(let index = 0; index < array.length - 1; index += 1) {
     let rep = 1;
     while (array[index] === array[index + 1]) {
