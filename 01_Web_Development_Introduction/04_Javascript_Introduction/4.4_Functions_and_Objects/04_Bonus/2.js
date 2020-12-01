@@ -20,7 +20,7 @@ function add(num1, num2) {
     if (str1.length > str2.length) {
       //Unshifting 0s lefts to the array won't change its number value
       strArray = str2.split('');
-      while (strArray.length < str2.length) {
+      while (strArray.length < str1.length) {
         strArray.unshift('0');
       }
       str2 = strArray.join('');
@@ -29,7 +29,7 @@ function add(num1, num2) {
       while (strArray.length < str2.length) {
         strArray.unshift('0');
       }
-      str2 = strArray.join('');
+      str1 = strArray.join('');
     }
   }
   // Checking which of the strings will go at the upper space whem writing the sum operation
@@ -55,6 +55,6 @@ function add(num1, num2) {
   return Number(resultString.join(''));
 }
 
-let a = 122;
-let b = 81;
+let a = 1236;
+let b = 30977;
 console.log(`${a} + ${b} = ${add(a , b)}`);
