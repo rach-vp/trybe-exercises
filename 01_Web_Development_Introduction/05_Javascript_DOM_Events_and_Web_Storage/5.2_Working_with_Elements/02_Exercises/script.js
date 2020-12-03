@@ -74,4 +74,20 @@ for (let index = 1; index <= 3; index += 1) {
 
 // PARTE II - Alterações diversas
 
-// 1- 
+// 1- Adicione a classe title na tag h1 criada;
+
+const title = document.getElementsByTagName('h1')[0];
+title.className = 'title';
+
+// 2- Adicione a classe description nas 3 tags h3 criadas;
+
+const addDescription = document.getElementsByTagName('h3');
+for (let index = 0; index < addDescription.length; index += 1) {
+  addDescription[index].className = 'description';
+}
+
+// 3- Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+
+const leftDiv = document.getElementsByClassName('left-content')[0];
+newDiv.removeChild(leftDiv);
+
