@@ -91,3 +91,8 @@ for (let index = 0; index < addDescription.length; index += 1) {
 const leftDiv = document.getElementsByClassName('left-content')[0];
 newDiv.removeChild(leftDiv);
 
+// 4- Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+
+const rightDiv = document.getElementsByClassName('right-content')[0];
+rightDiv.style.marginLeft = 'auto';
+rightDiv.style.marginRight = 'auto';
