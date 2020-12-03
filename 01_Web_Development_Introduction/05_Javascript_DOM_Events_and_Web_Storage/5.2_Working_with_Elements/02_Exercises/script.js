@@ -66,4 +66,14 @@ for (let index = 1; index <= 10; index += 1) {
 
 // 9- Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 
+const firstSubHeaderH3 = document.createElement('h3');
+const secondSubHeaderH3 = document.createElement('h3');
+const thirdSubHeaderH3 = document.createElement('h3');
 
+firstSubHeaderH3.innerText = 'Primeiro <h3>';
+secondSubHeaderH3.innerText = 'Segundo <h3>';
+thirdSubHeaderH3.innerText = 'Terceiro <h3>';
+
+newDiv.appendChild(firstSubHeaderH3);
+newDiv.appendChild(secondSubHeaderH3);
+newDiv.appendChild(thirdSubHeaderH3);
