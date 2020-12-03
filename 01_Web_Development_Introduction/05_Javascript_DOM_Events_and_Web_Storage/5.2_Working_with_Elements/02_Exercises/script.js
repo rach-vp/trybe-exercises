@@ -8,6 +8,8 @@ Raquel note: Estou fazendo em um arquivo separado para melhorar minha visualiza�
 
 */
 
+//PARTE I - ADICIONANDO OS ELEMENTOS
+
 // 1- Adicione a tag h1 com o texto 'Exercício 5.2 - JavaScript DOM' como filho da tag body;
 
 const header1 = document.createElement('h1');
@@ -50,3 +52,18 @@ const imgLeftAsideDiv = document.createElement('img');
 imgLeftAsideDiv.className = 'small-image';
 imgLeftAsideDiv.src = 'https://picsum.photos/200';
 leftAsideDiv.appendChild(imgLeftAsideDiv);
+
+// 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
+const newOrderedList = document.createElement('ol');
+rightAsideDiv.appendChild(newOrderedList);
+
+for (let index = 1; index <= 10; index += 1) {
+  const olItems = document.createElement('li');
+  olItems.innerText = index;
+  newOrderedList.appendChild(olItems);
+}
+
+// 9- Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+
+
