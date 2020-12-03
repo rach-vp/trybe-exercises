@@ -55,25 +55,23 @@ leftAsideDiv.appendChild(imgLeftAsideDiv);
 
 // 8- Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
 
-const newOrderedList = document.createElement('ol');
-rightAsideDiv.appendChild(newOrderedList);
+const newNonOrderedList = document.createElement('ul');
+rightAsideDiv.appendChild(newNonOrderedList);
 
 for (let index = 1; index <= 10; index += 1) {
-  const olItems = document.createElement('li');
-  olItems.innerText = index;
-  newOrderedList.appendChild(olItems);
+  const ulItems = document.createElement('li');
+  ulItems.innerText = index;
+  newNonOrderedList.appendChild(ulItems);
 }
 
 // 9- Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 
-const firstSubHeaderH3 = document.createElement('h3');
-const secondSubHeaderH3 = document.createElement('h3');
-const thirdSubHeaderH3 = document.createElement('h3');
+for (let index = 1; index <= 3; index += 1) {
+  const newH3 = document.createElement('h3');
+  newH3.innerText = `<h3> número ${index}`;
+  newDiv.appendChild(newH3);
+}
 
-firstSubHeaderH3.innerText = 'Primeiro <h3>';
-secondSubHeaderH3.innerText = 'Segundo <h3>';
-thirdSubHeaderH3.innerText = 'Terceiro <h3>';
+// PARTE II - Alterações diversas
 
-newDiv.appendChild(firstSubHeaderH3);
-newDiv.appendChild(secondSubHeaderH3);
-newDiv.appendChild(thirdSubHeaderH3);
+// 1- 
