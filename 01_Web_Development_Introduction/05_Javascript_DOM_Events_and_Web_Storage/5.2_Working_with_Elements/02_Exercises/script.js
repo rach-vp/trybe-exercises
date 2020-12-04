@@ -96,3 +96,15 @@ newDiv.removeChild(leftDiv);
 const rightDiv = document.getElementsByClassName('right-content')[0];
 rightDiv.style.marginLeft = 'auto';
 rightDiv.style.marginRight = 'auto';
+
+// 5- Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+
+const changeDivColor = document.getElementsByClassName('center-content')[0];
+changeDivColor.parentNode.style.backgroundColor = 'green';
+
+// 6- Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+const removeUnorderedListElements = document.getElementsByTagName('li');
+for (let index = removeUnorderedListElements.length - 1; index >= 8; index -= 1) {
+  removeUnorderedListElements[index].lastChild.remove();
+}
