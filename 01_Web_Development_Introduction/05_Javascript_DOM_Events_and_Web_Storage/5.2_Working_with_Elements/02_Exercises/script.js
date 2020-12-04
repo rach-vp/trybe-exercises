@@ -104,7 +104,8 @@ changeDivColor.parentNode.style.backgroundColor = 'green';
 
 // 6- Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
 
-const removeUnorderedListElements = document.getElementsByTagName('li');
-for (let index = removeUnorderedListElements.length - 1; index >= 8; index -= 1) {
-  removeUnorderedListElements[index].lastChild.remove();
+const unorderedList = document.getElementsByTagName('ul')[0];
+const unorderedListElements = document.getElementsByTagName('li');
+for (let index = unorderedListElements.length - 1; index >= 8; index -= 1) {
+  unorderedList.removeChild(unorderedListElements[index]);
 }
