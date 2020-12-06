@@ -101,9 +101,32 @@ holidayButton.addEventListener('click', function() {
 
 // Exercício 4
 
-// Aqui vou utilizar a mesma funçõa que criada no exercício 3
+// Aqui vou utilizar a mesma função criada no exercício 2
 
-createButton('Sexta-feira', 'btn=friday');
+createButton('Sexta-feira', 'btn-friday');
 
+// Exercício 5
 
+function createAuxArray(fridayDays) {
+  let auxArray = [];
+  for (let index = 0; index < fridayDays.length; index += 1) {
+    auxArray.push(fridayDays[index]);
+  }
+  return auxArray;
+}
+
+function sextou(auxArray, fridayDays) {
+  for (let index = 0; index < fridayDays.length; index += 1) {
+    if (fridayDays[index].innerText !== 'SEXTOU!') {
+      fridayDays[index].innerText = 'SEXTOU!';
+    } else {
+      fridayDays[index].innerText = auxArray[index];
+    }
+  }
+}
+
+const fridayButton = document.querySelector('#btn-friday');
+const fridayDays = document.querySelectorAll('.friday');
+const auxArray = createAuxArray(fridayDays);
+fridayButton.addEventListener('click', sextou(auxArray, fridayDays));
 
