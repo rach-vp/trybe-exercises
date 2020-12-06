@@ -141,12 +141,10 @@ for (let index = 0; index < days.length; index += 1) {
   days[index].addEventListener('mouseenter', function(event) {
     event.target.style.fontSize = '50px';
     event.target.style.fontWeight = '600';
-    console.log(`Mouse enters ${event.target.innerText}`);
   });
   days[index].addEventListener('mouseleave', function(event) {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = 'normal';
-    console.log(`Mouse leaves ${event.target.innerText}`);
   })
 }
 
@@ -172,3 +170,39 @@ function taskColor(color) {
 }
 
 taskColor('rgb(65,105,225)');
+
+// Exercício 9
+
+function selectTask() {
+  const tasks = document.querySelectorAll('.task');
+  for (let index = 0; index < tasks.length; index += 1) {
+    tasks[index].addEventListener('click', function() {
+      if (tasks[index].className !== 'task selected') {
+        tasks[index].className = 'task selected';
+        console.log(tasks[index].className);
+      } else {
+        tasks[index].className = 'task';
+        console.log(tasks[index].className);
+      }
+    });
+  }
+}
+
+// Exercício 10
+
+
+
+// Bônus
+
+function transferText() {
+  const taskText = document.querySelector('#task-input').value;
+  if (taskText.length > 0) {
+    newTask(taskText.innerText);
+    taskColor('red');
+  } else {
+    alert('Campo em branco!')
+  }
+}
+
+const addTaskButton = document.querySelector('#btn-add');
+addTaskButton.addEventListener('click', transferText);
