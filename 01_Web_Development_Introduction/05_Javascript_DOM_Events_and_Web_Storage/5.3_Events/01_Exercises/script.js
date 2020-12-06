@@ -72,3 +72,16 @@ function organizeDaysOfTheMonth() {
 }
 
 organizeDaysOfTheMonth();
+
+// Exercício 2
+
+function createButton(buttonName, buttonID) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const newButton = document.createElement('button');
+  newButton.id = buttonID;
+  newButton.innerText = buttonName;
+  buttonsContainer.appendChild(newButton);
+}
+
+createButton('Feriados', 'btn-holiday');
+
