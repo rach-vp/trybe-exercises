@@ -171,6 +171,21 @@ function taskColor(color) {
 
 taskColor('rgb(65,105,225)');
 
+// Adicionando quebra de linha aos itens da lista
+
+function taskListLineBreak() {
+  const taskList = document.querySelector('.my-tasks');
+  const taskSpan = document.querySelectorAll('.my-tasks span');
+  const taskDiv = document.querySelectorAll('.my-tasks div');
+  const newListItem = document.createElement('li');
+  newListItem.appendChild(taskSpan[taskSpan.length - 1]);
+  newListItem.appendChild(taskDiv[taskDiv.length - 1]);
+  newListItem.style.lineHeight = '50px';
+  taskList.appendChild(newListItem);
+}
+
+taskListLineBreak();
+
 // Exercício 9
 
 function selectTask() {
@@ -197,8 +212,9 @@ function selectTask() {
 function transferText() {
   const taskText = document.querySelector('#task-input').value;
   if (taskText.length > 0) {
-    newTask(taskText.innerText);
+    newTask(taskText);
     taskColor('red');
+    taskListLineBreak();
   } else {
     alert('Campo em branco!')
   }
