@@ -15,8 +15,33 @@ createDaysOfTheWeek();
 // Escreva seu código abaixo.
 
 // Exercício 1
-function checkDayByClass(dayValue) {
+function isHoliday(dayValue) {
+  let holiday = false;
+  if (dayValue === 24) {
+    holiday = true;
+  } else if (dayValue === 25) {
+    holiday = true;
+  } else if (dayValue === 31) {
+    holiday = true;
+  }
+  return holiday;
+}
 
+function isFriday(dayOfTheWeek) {
+  let friday = false;
+  if (dayOfTheWeek === 5) {
+    friday = true;
+  }
+  return friday;
+}
+
+function addSpecialClass(dayValue, dayOfTheWeek, newDayListElement) {
+  if (isHoliday(dayValue)) {
+    newDayListElement.className += ' holiday';
+  }
+  if (isFriday(dayOfTheWeek)) {
+    newDayListElement.className += ' friday'
+  }
 }
 
 function organizeDaysOfTheMonth() {
@@ -37,8 +62,8 @@ function organizeDaysOfTheMonth() {
         const newDayListElement = document.createElement('li');
         newDayListElement.innerText = dayOfTheMonth;
         newDayListElement.className = 'day';
+        addSpecialClass(dezDaysList[dayIndex], dayOfTheWeekIndex, newDayListElement);
         days.appendChild(newDayListElement);
-        // checkDayByClass();
         dayIndex += 1;
       }
     }
