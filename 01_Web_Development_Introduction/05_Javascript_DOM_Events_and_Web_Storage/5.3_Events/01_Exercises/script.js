@@ -205,4 +205,10 @@ function transferText() {
 }
 
 const addTaskButton = document.querySelector('#btn-add');
+const inputBox = document.querySelector('#task-input');
 addTaskButton.addEventListener('click', transferText);
+inputBox.addEventListener('keydown', function(event) {
+  if (event.keyCode === 13) {
+    transferText();
+  }
+})
