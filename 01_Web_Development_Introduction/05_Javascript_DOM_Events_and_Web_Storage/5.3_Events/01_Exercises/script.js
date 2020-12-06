@@ -99,3 +99,11 @@ holidayButton.addEventListener('click', function() {
   }
 });
 
+// Exercício 4
+
+// Aqui vou utilizar a mesma funçõa que criada no exercício 3
+
+createButton('Sexta-feira', 'btn=friday');
+
+
+
