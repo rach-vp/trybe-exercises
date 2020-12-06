@@ -152,12 +152,23 @@ for (let index = 0; index < days.length; index += 1) {
 
 // Exercício 7
 
-const taskList = document.querySelector('.my-tasks');
-
 function newTask(taskName) {
+  const taskList = document.querySelector('.my-tasks');
   const task = document.createElement('span');
   task.innerText = taskName;
   taskList.appendChild(task);
 }
 
 newTask('Início hackathon Ambev - 11/12');
+
+// Exercício 8
+
+function taskColor(color) {
+  const taskList = document.querySelector('.my-tasks');
+  const taskColor = document.createElement('div');
+  taskColor.className = 'task';
+  taskColor.style.backgroundColor = color;
+  taskList.appendChild(taskColor);
+}
+
+taskColor('rgb(65,105,225)');
