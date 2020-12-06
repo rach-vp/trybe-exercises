@@ -149,3 +149,15 @@ for (let index = 0; index < days.length; index += 1) {
     console.log(`Mouse leaves ${event.target.innerText}`);
   })
 }
+
+// Exercício 7
+
+const taskList = document.querySelector('.my-tasks');
+
+function newTask(taskName) {
+  const task = document.createElement('span');
+  task.innerText = taskName;
+  taskList.appendChild(task);
+}
+
+newTask('Início hackathon Ambev - 11/12');
