@@ -109,8 +109,9 @@ createButton('Sexta-feira', 'btn-friday');
 
 function createAuxArray(fridayDays) {
   let auxArray = [];
+  console.log(fridayDays);
   for (let index = 0; index < fridayDays.length; index += 1) {
-    auxArray.push(fridayDays[index]);
+    auxArray.push(fridayDays[index].innerText);
   }
   return auxArray;
 }
@@ -128,5 +129,12 @@ function sextou(auxArray, fridayDays) {
 const fridayButton = document.querySelector('#btn-friday');
 const fridayDays = document.querySelectorAll('.friday');
 const auxArray = createAuxArray(fridayDays);
-fridayButton.addEventListener('click', sextou(auxArray, fridayDays));
+// console.log(auxArray);
+fridayButton.addEventListener('click', function () {
+  sextou(auxArray, fridayDays);
+});
+
+
+// Exercício 6
+
 
