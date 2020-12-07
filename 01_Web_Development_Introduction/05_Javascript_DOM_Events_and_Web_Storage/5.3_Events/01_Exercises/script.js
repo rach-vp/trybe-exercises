@@ -145,7 +145,7 @@ for (let index = 0; index < days.length; index += 1) {
   days[index].addEventListener('mouseleave', function(event) {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = 'normal';
-  })
+  });
 }
 
 // Exercício 7
@@ -194,14 +194,14 @@ function selectTask() {
     tasks[index].addEventListener('click', function() {
       if (tasks[index].className !== 'task selected') {
         tasks[index].className = 'task selected';
-        console.log(tasks[index].className);
       } else {
         tasks[index].className = 'task';
-        console.log(tasks[index].className);
       }
     });
   }
 }
+
+selectTask();
 
 // Exercício 10
 
