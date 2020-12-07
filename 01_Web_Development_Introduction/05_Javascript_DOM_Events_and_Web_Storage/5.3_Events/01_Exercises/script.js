@@ -135,18 +135,21 @@ fridayButton.addEventListener('click', function () {
 
 // Exercício 6
 
-const days = document.querySelectorAll('.day');
-
-for (let index = 0; index < days.length; index += 1) {
-  days[index].addEventListener('mouseenter', function(event) {
-    event.target.style.fontSize = '50px';
-    event.target.style.fontWeight = '600';
-  });
-  days[index].addEventListener('mouseleave', function(event) {
-    event.target.style.fontSize = '20px';
-    event.target.style.fontWeight = 'normal';
-  });
+function highlightDays() {
+  const days = document.querySelectorAll('.day');
+  for (let index = 0; index < days.length; index += 1) {
+    days[index].addEventListener('mouseenter', function(event) {
+      event.target.style.fontSize = '50px';
+      event.target.style.fontWeight = '600';
+    });
+    days[index].addEventListener('mouseleave', function(event) {
+      event.target.style.fontSize = '20px';
+      event.target.style.fontWeight = 'normal';
+    });
+  }
 }
+
+highlightDays();
 
 // Exercício 7
 
@@ -188,24 +191,63 @@ taskListLineBreak();
 
 // Exercício 9
 
-function selectTask() {
+function refreshTaskList() {
   const tasks = document.querySelectorAll('.task');
   for (let index = 0; index < tasks.length; index += 1) {
     tasks[index].addEventListener('click', function() {
       if (tasks[index].className !== 'task selected') {
         tasks[index].className = 'task selected';
+        console.log('Task successfully selected!');
       } else {
         tasks[index].className = 'task';
+        console.log('Task successfully deselected!');
       }
     });
   }
 }
 
-selectTask();
+refreshTaskList();
 
 // Exercício 10
+function resetColorCheck(target) {
+  if (target.style.color === '') {
+    return;
+  } else if (target.style.color !== 'rgb(119 , 119 , 119)') {
+    target.style.color = 'rgb(119 , 119 , 119)';
+    console.log('Color reseted.');
+  }
+}
 
+function checkTaskStatus(selectedTask) {
+  let passed = true;
+  if (selectedTask === undefined) {
+    passed = false;
+  }
+  return passed;
+}
 
+function changecolor(target, selectedTask) {
+  target.style.color = selectedTask.style.backgroundColor;
+  selectedTask.className = 'task';
+  console.log('Color successfully changed.');
+}
+
+function paintDayWithTaskColor() {
+  const days = document.querySelectorAll('.day');
+  for (let index = 0; index < days.length; index += 1) {
+    days[index].addEventListener('click', function(event) {
+      const selectedTaskColor = document.getElementsByClassName('task selected')[0]; //OK
+      resetColorCheck(event.target);
+      if (checkTaskStatus(selectedTaskColor)) {
+        changecolor(event.target, selectedTaskColor);
+      } else {
+        console.log('No tasks selected.');
+      }
+    });
+  }
+}
+
+paintDayWithTaskColor()
 
 // Bônus
 
@@ -215,6 +257,7 @@ function transferText() {
     newTask(taskText);
     taskColor('red');
     taskListLineBreak();
+    refreshTaskList();
   } else {
     alert('Campo em branco!')
   }
@@ -227,4 +270,4 @@ inputBox.addEventListener('keydown', function(event) {
   if (event.keyCode === 13) {
     transferText();
   }
-})
+});
