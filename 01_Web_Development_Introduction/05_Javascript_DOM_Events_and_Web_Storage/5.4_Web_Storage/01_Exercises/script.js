@@ -112,7 +112,7 @@ window.onload = (() => {
     if (Object.keys(bodyStyleProperties).includes(key)) {
       body.style[bodyStyleProperties[key]] = localStorage.getItem(key);
     } else if (Object.keys(articleProperties).includes(key)) {
-      article[articleProperties[key]] = localStorage.getItem(key);
+      article.style[articleProperties[key]] = localStorage.getItem(key);
     } else {
       body.classList.add(localStorage.getItem(key));
     }
