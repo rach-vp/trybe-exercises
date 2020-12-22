@@ -22,13 +22,15 @@ fontTypeSelector.addEventListener('change', () => changeFontType(body, fontTypeS
 
 //Funções
 function switchMode(body) {
-  body.style.backgroundColor = '';
-  body.style.color = '';
-  body.classList.toggle('dark-mode');
-  localStorage.setItem('dark-mode', body.classList);
-  localStorage.removeItem('background-color');
-  localStorage.removeItem('color');
-
+  if (!body.classList.toggle('dark-mode')) {
+    localStorage.removeItem('dark-mode');
+  } else {
+    body.style.backgroundColor = '';
+    body.style.color = '';
+    localStorage.setItem('dark-mode', body.classList);
+    localStorage.removeItem('background-color');
+    localStorage.removeItem('color');
+  }
 }
 
 function changeBGColor(body, bgColorSelector) {
@@ -93,22 +95,26 @@ function changeFontType(body, fontType) {
 }
 
 window.onload = (() => {
-  const bodyProperties = {
-    'dark-mode': 'className',
-    'background-color': 'style.backgroundColor',
-    'color': 'style.color',
-    'font-family': 'style.fontFamily',
+  const bodyClassPropperties = {
+    'dark-mode': 'dark-mode',
+  }
+  const bodyStyleProperties = {
+    'background-color': 'backgroundColor',
+    'color': 'color',
+    'font-family': 'fontFamily',
   };
   const articleProperties = {
-    'font-size': 'style.fontSize',
-    'line-height': 'style.lineHeight',
+    'font-size': 'fontSize',
+    'line-height': 'lineHeight',
   }
   for (let index = 0; index < localStorage.length; index += 1) {
     const key = localStorage.key(index);
-    if (Object.keys(bodyProperties).includes(key)) {
-      body[bodyProperties[key]] = localStorage.getItem(key);
-    } else {
+    if (Object.keys(bodyStyleProperties).includes(key)) {
+      body.style[bodyStyleProperties[key]] = localStorage.getItem(key);
+    } else if (Object.keys(articleProperties).includes(key)) {
       article[articleProperties[key]] = localStorage.getItem(key);
+    } else {
+      body.classList.add(localStorage.getItem(key));
     }
   }
 });
