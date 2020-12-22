@@ -1,0 +1,32 @@
+/* Tag styles */
+body {
+  display:  flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+p {
+  margin: 0 5rem;
+  text-align: justify;
+  text-indent: 2.5rem;
+}
+
+/* Class styles */
+.main-container {
+  width: 65vw;
+}
+
+.aside-container {
+  width: 25vw;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.article-container {
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  padding: 2.5rem 0;
+}
