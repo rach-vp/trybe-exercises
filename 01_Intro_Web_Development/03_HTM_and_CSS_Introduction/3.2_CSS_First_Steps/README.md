@@ -1,24 +1,39 @@
-# Criação de uma página web de acordo com os exercícios citados no conteúdo do bloco 3.2 - Primeiros passos em CSS.
-# Iniciou-se o trabalho com estilizações. Bem básico, mas que já dão um novo ar para as páginas.
+# Contents
 
-## Parte 1
+## Part I
 
-    1 - Modifique o tamanho do h1 para 65 pixels
-    2 - Modifique a cor do texto do h1 para laranja
-    3 - Modifique a cor de fundo da lista não ordenada 
-    4 - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo
+1. Modify the h1 font size to 65px
+2. Modify the h1 text color to orange
+3. Modify the unordered list background color
+4. Create a class to modify the tags p and ul background color at the same time
 
-## Parte 2
+## Part II
 
-    1 - Modifique o família do h1 para sans-serif
-    2 - Deixe o paragrafo com o font-weight 600
-    3 - Modifique o font-size do body para 16px
-    4 - Coloque o tamanho do paragrafo com o tamanho de 3 vezes o padrão do body
-    5 - Explore as propriedades font-style, line-height, text-align e text-decoration
-    6 - Troque a cor de fundo de cada item da lista para a cor correspondente ao texto
+1. Modify the h1 font family to sans-serif
+2. Set the paragraph font weight to 600
+3. Modify the body font size to 16px
+4. Set the paragraph font size to 3 times the body's size
+5. Explore the properties font-style, line-height, text-align and text-decoration
+6. Switch the background color of each listem according to the text
 
-## Parte 3
+## Part III
 
-    Coloque todo o CSS criado até agora nos exercícios anteriores em um arquivo externo.
+1. Change all CSS made until now to an external file and link it to the HTML file
 
-# O arquivo contém o resultado final dos exercícios
+# Exercises
+
+## Styling your Web Portfolio
+
+Befora starting, you must follow the instructions below and set everything up to the today's exercise
+
+1. Go to the directory you created yesterday
+2. Add the tag ```<style></style>``` where you are going to put your styling into
+3. Search for a color palette which you identifies the most
+4. Remind to execute your code using Live Server while developing.
+
+## Requirements
+
+1. Set diferent fonts to your name and to the description you've created
+2. Set a background color base to your page
+3. Change the style of the tags you've used to highlight some infos
+4. Set diferent sizes to the elements of your skill list. Remind of using classes to each one of them
