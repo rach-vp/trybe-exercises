@@ -1,25 +1,29 @@
-## Criação de uma página web semanticamente correta de acordo com o que foi visto no bloco 3.4 - HTML semântico.
-## Foi desenvolvida uma página web falando sobre o camarão louva-deus, mas com o diferencial de dar fco para a semântica das tags HTML, o que, além de melhor o ranqueamento da páginas em ferramentas de pesquisa, torna-a acessível para pessoas com deficiência visual que necessitam do auxílio de um leitor de página para usufruir do conteúdo, por exemplo. Abaixo estão descritos os requisitos da página.
+# Exercises
 
-O objetivo desses exercícios é colocar em prática o que você acabou de aprender sobre HTML semântico.
-Para tal, criaremos uma página que apresenta um dos animais mais impressionantes que existem: o Stomatopoda. A estilização da página fica a seu critério. 😉
+## Pratice
 
-Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:
+The aim of these exercises is practice what you've learned about Semantic HTML.
+To this end, we are going to create a page that introduces one of the most impressive animals that exists: the Stomatopoda. Styling is on your own 😉
+For a better organization, make commits at each concluded task. Let's bagin:
 
-1 - Adicione um cabeçalho na página contendo o título Soco a 80km/h: Conheça o Stomatopoda.
-2 - Adicione um conjunto de links que representam a área de navegação do site.
-    1 - Crie um link chamado Página Inicial.
-    2 - Crie um link chamado Sobre.
-    3 - Crie um link chamado Contato.
-3 - Crie um artigo que vai conter os fatos interessantes sobre o Stomatopoda. O artigo terá o subtítulo Fatos sobre o Stomatopoda. Segue um site animal de inspiração para pegar fatos.
-4 - Divida o artigo em seções, organizando-o da seguinte forma:
-    1 - Uma primeira seção contendo informações gerais a respeito do animal. O subtítulo para essa seção fica a seu critério. É necessário que conste nessa seção seu nome científico, que é Odontodactylus scyllarus, em itálico. Além disso, é preciso que haja informação tabular a respeito de sua classifição científica, em específico: Reino, Filo, Subfilo, Classe, Subclasse e Ordem. Tais informações você consegue obter na Wikipedia.
-    2 - As outras seções dizem respeito aos fatos interessantes que você escolheu acerca do animal. Para cada fato escolhido você vai criar uma seção.
-    3 - Adicione para cada seção um subtítulo referente ao fato escolhido.
-    4 - Adicione, para cada seção, parágrafo(s) descrevendo o fato escolhido. Destaque características impressionantes referentes ao fato que você escolheu, de forma a reforçar a unicidade do Stomatopoda. Por exemplo: se você criar uma seção detalhando o soco potente do animal, seria interessante destacar a velocidade desse soco (80km/h) em negrito.
-    5 - Adicione, para cada seção, uma imagem, como forma de ilustrar o fato.
-    6 - Adicione, por fim, uma seção de referências bibliográficas, contendo uma lista de todos os links que foram usados como base para compilar a página em questão.
-5 - Adicione um conteúdo adjacente ao artigo, disponibilizando um link para este vídeo, que mostra o animal em ação.
-6 - Adicione um rodapé na página, mostrando algo do gênero "Conteúdo compilado por , ".
+1. Add a header containing the title ```Soco a 80km/h: Conheça o Stomatopoda```
+2. Add a group of links that represent the navigation area of the site
+3. Create a link named ```Página Inicial```
+4. Create a link named ```Sobre```
+5. Create a link named ```Contato```
+6. Create an article with interesting facts about Stomatopoda. It must contain a subheading ```Fatos sobre o Stomatopoda```.
+7. Split the article in sections like the following order:
+8. First section containing infos about the animal. The subheading for this sections is on your own. It is requiered for this section to have the Stomatopoda's scientific name which is ```Odontodactylus scyllarus``` in italics. Besides, table information about the scientific classification (Reino , Filo , Subfilo , Classe , Subclasse e Ordem) must be available.
+9. Other sections describes some interesting facts of your choive about Stomatopoda. For each fact, a section must be created.
+10. For each section, add a different subheading
+11. Add paragraphs to each section describing the chosen fact. Highlight the stunning skills about the fact you've chosen, in order to boast the unicity of Stomatopoda. Example: If you create a section for the potent punch, it would be interesting to bold the speed of its punch.
+12. Add, for each section, an image to ilustrate the fact.
+13. Add, at last, a section for bibliography, containing a list of links that were used to join all the information.
+14. Add some content aside the article, providing a link to a video that shows the animal in action.
+15. Add a footer to the page, showing something like "Compile by 'You name'."
 
-Obs: para esse exercício, é obrigatório fazer uso de no mínimo elementos com as seguintes tags: header, nav, article, section, h1, h2, h3, aside, footer, table e img.
+## Validating the exercises
+
+Now that you've created the page, assume that a person with vision disability acesses your page. Would it be acessible for this person?
+Let's check!
+Use the aChecker site to validate if the semantics is correct.
