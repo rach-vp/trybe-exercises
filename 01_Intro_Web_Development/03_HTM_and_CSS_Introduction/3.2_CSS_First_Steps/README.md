@@ -1,13 +1,15 @@
-# Contents
+# 3.2 - CSS First Steps
 
-## Part I
+## Contents
+
+### Part I
 
 1. Modify the h1 font size to 65px
 2. Modify the h1 text color to orange
 3. Modify the unordered list background color
 4. Create a class to modify the tags p and ul background color at the same time
 
-## Part II
+### Part II
 
 1. Modify the h1 font family to sans-serif
 2. Set the paragraph font weight to 600
@@ -16,13 +18,13 @@
 5. Explore the properties font-style, line-height, text-align and text-decoration
 6. Switch the background color of each listem according to the text
 
-## Part III
+### Part III
 
 1. Change all CSS made until now to an external file and link it to the HTML file
 
-# Exercises
+## Exercises
 
-## Styling your Web Portfolio
+### Styling your Web Portfolio
 
 Befora starting, you must follow the instructions below and set everything up to the today's exercise
 
@@ -31,7 +33,7 @@ Befora starting, you must follow the instructions below and set everything up to
 3. Search for a color palette which you identifies the most
 4. Remind to execute your code using Live Server while developing.
 
-## Requirements
+### Requirements
 
 1. Set diferent fonts to your name and to the description you've created
 2. Set a background color base to your page
