@@ -53,13 +53,13 @@ It's time to apply your knowledge in handling HTML elements!
     <script>
         /*
         Here you're going to modify the elements existing using only the functions:
-          - document.getElementById()
-          - document.getElementsByClassName()
-          - document.getElementsByTagName()
+            - document.getElementById()
+            - document.getElementsByClassName()
+            - document.getElementsByTagName()
         1. Create a function that changes the inner text of <p> tag to a description of how you see yourself two years from now. (Don't take too much time thinking of the text but do it on the exercise)
-        2. Create a function that changes the color of the yellow sqaure to Trybe green (rgb(76,164,109))
-        3. Create a function that changes the color of the red sqaure to white
-        4. Createa a function that corrects the inner text of <h1> tag
+        2. Create a function that changes the colour of the yellow square to Trybe green (rgb(76,164,109))
+        3. Create a function that changes the colour of the red square to white
+        4. Create a function that corrects the inner text of <h1> tag
         5. Create a function that modifies all inner text of <p> tag to upper case
         6. Create a function that shows the content of all <p> tags on the console
         */
