@@ -1,20 +1,20 @@
-## Exercícios do bloco 5.4 - Web Storage
+# 5.4 - Web Storage
 
-#### Agora a prática
+## Deepen your knowledge
 
-  Imagine que você é a pessoa responsável por desenvolver uma página que servirá como um leitor de conteúdo escrito.
-  Esse conteúdo escrito pode ser uma página de livro, uma reportagem de revista ou uma nota de jornal online. Para que você não tenha que pensar no conteúdo da página, utilize este link para gerar o texto para sua página.
-  Até aqui, nenhuma novidade, mas essa demanda exige que você aplique preferências das pessoas leitoras na página para melhorar a experiência de leitura dessas pessoas.
-  As pessoas devem ter o poder de alterar:
-    
-    Cor de fundo da tela;
-    Cor do texto;
-    Tamanho da fonte;
-    Espaçamento entre as linhas do texto;
-    Tipo da fonte ( Font family ).
+Imagine that you are the person responsible for developing a page that will show a written content for the readers.
+This written content could be a book's page, a magazine or newspaper article, etc. In order to you don't spend time thinking about the content, use this [link](https://www.lipsum.com/) to generate the text for your page.
+So far no news, but this demand requires that you apply preferences of your readers on the page to improve their reading experience.
+People can change:
 
-  Essas preferências devem ser salvas de forma que, ao retornar à página, as preferências que foram previamente configuradas possam ser aplicadas na tela.
+- Screen background-colour
+- Text colour
+- Font-size
+- Line-height
+- Font-family
 
-#### Bônus
+These preferences should be stored in a way that, when returning to the page, they are loaded on the screen as previously set.
 
-  As propriedades descritas acima são obrigatórias , mas você é livre para adicionar qualquer outra propriedade que julgar válida e que tenha como objetivo a melhora da experiência da pessoa que lê em sua página.
+## Bonus
+
+Those properties described above are required, but you can add any other properties that you judge valid and aims for improving the users’ experience.
