@@ -2,7 +2,7 @@
 
 ## Deepen your knowledge
 
-Read carefully the title and do what is asked! You are going to use the array below to complete the exercises 1 to 7:
+Read carefully the question titles and do what is asked! You are going to use the array below to complete the exercises 1 to 7:
 
 ```
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];

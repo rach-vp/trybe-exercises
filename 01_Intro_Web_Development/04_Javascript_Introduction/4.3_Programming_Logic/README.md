@@ -1,9 +1,12 @@
-# Resolução de alguns exercícios para exercitar mais um pouco a lógica de programação em JS, assunto do bloco 4.3
+# Exercises
 
-#### Agora a prática
+## Deepen your knowledge
 
-1- Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer, seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho n . Por exemplo:
+Read carefully the question titles and do what is asked!
+> We recommend you to use the ``debugger`` during the exercises. In this way, it will be easier to follow the code behaviour and understand what is happening in each line.
 
+1. Create a program that, given any value to ``n`` since ``n > 1``, prints on the screen a square made of stars which its size is the value of ``n``
+```
 n = 5
 
 *****
@@ -11,9 +14,9 @@ n = 5
 *****
 *****
 *****
-
-2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
-
+```
+2. Do the same as before, but print a triangle with 5 stars on its base.
+```
 n = 5
 
 *
@@ -21,9 +24,9 @@ n = 5
 ***
 ****
 *****
-
-3- Agora inverta o lado do triângulo. Por exemplo:
-
+```
+3. Now reverse the triangle.
+```
 n = 5
 
     *
@@ -31,29 +34,25 @@ n = 5
   ***
  ****
 *****
-Atenção! Note que esse exercício é bem mais complexo que o anterior! Não basta, aqui, imprimir somente asteriscos. Você precisará de uma lógica para imprimir espaços também.
-
-4- Depois, faça uma pirâmide com n asteriscos de base:
-
+```
+4. Then build a pyramid with a base sized of ``n`` stars
+```
 n = 5
 
   *
  ***
 *****
+```
 
-#### Bônus
+## Bonus
 
-5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
-Copiar
-Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
-
+5. Build a hollow pyramid with a base sized of ``n`` stars. Assume that ``n`` is always odd.
+```
 n = 7
 
    *
   * *
  *   *
 *******
-
-6- Faça um programa que diz se um número definido numa variável é primo ou não.
-Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele com quaisquer outros números dá resto diferente de zero.
-Dica: você vai precisar de fazer um loop que vá de 0 ao número definido; Além disso, vai precisar de fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+```
+6. Create a program that says if some defined number is a prime or not.
