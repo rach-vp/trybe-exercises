@@ -1,34 +1,28 @@
-# Resolução de alguns exercícios para exercitar a lógica de programação com arrays e loop for, conteúdo abordado no bloco 4.2
+# Exercises
 
-#### Agora a prática
+## Deepen your knowledge
 
-Leia atentamente os enunciados e faça o que se pede! Você irá utilizar esse array para realizar os exercícios do 1 ao 7:
+Read carefully the title and do what is asked! You are going to use the array below to complete the exercises 1 to 7:
 
+```
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+```
 
-1 - Nesse primeiro exercício, percorra o array imprimindo todos os valores nele contidos com a função console.log() ;
+1. Sweep the array printing all its values with the function ``console.log()``
+2. Sum all the values in the array and print the result
+3. Calculate and print the arithmetic average of the array values
+4. Using the code made in the previous exercise, if the average is greater than 20, print the message ``valor maior que 20``. Else print the message ``valor menor ou igual a 20``
+5. Using ``for`` loop, look up for the greatest value in the array and print it
+6. Find out how many odd values exist in the array and print the result. If there's none, print the message ``nenhum valor ímpar encontrado``
+7. Using ``for`` loop, find out which one is the lowest value in the array and print it
+8. Using ``for`` loop, create a array that goes from 1 to 25 and print the result
+9. Using the array created in the previous exercise, print the result of the division of each one of the values by 2
 
-2 - Para o segundo exercício, você deve somar todos os valores contidos no array e imprimir o resultado;
+## Bonus
 
-3 - Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
+For the next two exercises [read this article](http://devfuria.com.br/logica-de-programacao/introducao-ao-algoritmo-de-ordenacao-bubble-sort/) and try to figure out what is going on in the code below:
 
-4 - A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
-
-5 - Com o mesmo código do exercício anterior, caso valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não s  seja, imprima a mensagem: "valor menor ou igual a 20";
-
-6 -Utilizando for , descubra qual o maior valor contido no array e imprima-o;
-Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
-
-7 - Utilizando for , descubra qual o menor valor contido no array e imprima-o;
-
-8 - Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
-
-9 - Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.
-
-#### Bônus
-
-Para os próximos dois exercícios leia este artigo e tente entender o que está acontencedo no código abaixo:
-
+```
 for (let i = 1; i < array.length; i++) {
   for (let j = 0; j < i; j++) {
     if (array[i] < array[j]) {
@@ -39,11 +33,13 @@ for (let i = 1; i < array.length; i++) {
     }
   }
 }
+```
 
-1 - Ordene o array numbers em ordem crescente e imprima seus valores;
+1. Sort the array ``numbers`` in ascending order and print its values
+2. Sort the array ``numbers`` in decreasing order and print its values
+3. Now you are going to create a new array from the array ``numbers`` without losing it. Each value of the new array must be equal to the corresponding value of array ``numbers`` times the next one. Example: The first value of the new array must be 45 because it's the result of the multiplication of 5 (first value of ``numbers``) by 9 (second value of ``numbers``). If there is no next value, the multiplication is made by 2. Do it using ``for`` loop and ``push``. The result is the array below:
 
-2 - Ordene o array numbers em ordem decrescente e imprima seus valores;
-
-3 - Agora você irá criar um novo array a partir do array numbers , sem perdê-lo. Cada valor do novo array deverá ser igual ao valor correspondente no array numbers multiplicado pelo seguinte. Por exemplo: o primeiro valor do novo array deverá ser 45, pois é a multiplicação de 5 (primeiro valor) e 9 (valor seguinte). Já o segundo valor do novo array deverá ser 27, pois é a multiplicação de 9 (segundo valor) e 3 (valor seguinte), e assim por diante. Caso não haja próximo valor, a multiplicação deverá ser feita por 2. Faça isso utilizando o for e o método push . O resultado deve ser o array abaixo:
-
+```
 [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
+```
+
