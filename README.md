@@ -25,7 +25,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 3.2 - HTML and CSS: First Steps on CSS
 - [x] 3.3 - HTML and CSS: Selectors and Positioning
 - [x] 3.4 - Semantic HTML
-- [x] 3.5 - [Project - Lessons Learned](rach-vp.github.io/trybe-projects/01-lessons-learned/index.html)
+- [x] 3.5 - [Project - Lessons Learned](https://rach-vp.github.io/trybe-projects/01-lessons-learned/index.html)
 
 ### Block 04 - Intro to JavaScript
 
@@ -41,11 +41,11 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 5.2 - JavaScript: Working with Elements
 - [x] 5.3 - JavaScript: Events
 - [x] 5.4 - JavaScript: Web Storage
-- [x] 5.5 - [Project: Pixels Art](rach-vp.github.io/trybe-projects/03-pixels-art/index.html)
-- [x] 5.6 - [Project: To Do List](rach-vp.github.io/trybe-projects/04-todo-list/index.html)
-- [x] 5.7 - [Project: Meme Generator](rach-vp.github.io/trybe-projects/05-meme-generator/index.html)
-- [x] 5.8 - [Project: Guess the Color](rach-vp.github.io/trybe-projects/06-guess-color/index.html)
-- [x] 5.9 - [Project: Mysterious Letter](rach-vp.github.io/trybe-projects/07-mistery-letter/index.html)
+- [x] 5.5 - [Project: Pixels Art](https://rach-vp.github.io/trybe-projects/03-pixels-art/index.html)
+- [x] 5.6 - [Project: To Do List](https://rach-vp.github.io/trybe-projects/04-todo-list/index.html)
+- [x] 5.7 - [Project: Meme Generator](https://rach-vp.github.io/trybe-projects/05-meme-generator/index.html)
+- [x] 5.8 - [Project: Guess the Color](https://rach-vp.github.io/trybe-projects/06-guess-color/index.html)
+- [x] 5.9 - [Project: Mysterious Letter](https://rach-vp.github.io/trybe-projects/07-mistery-letter/index.html)
 
 ### Block 06 - HTML and CSS: Forms, Flexbox ans Responsivity
 
