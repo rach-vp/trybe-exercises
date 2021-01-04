@@ -1,182 +1,104 @@
-# Resolução de exercícios sobre o conteúdo do bloco 4.4 - Objetos e Funções
+# 4.4 - Functions and objects
 
-### Conteúdos
+## Contents
 
-#### Objetos
+### Objects
 
-  Então, pessoal, como vocês viram, objetos também são variáveis, porém eles podem organizar estruturas mais complexas.
+So, guys, you’ve seen that objects are also variables however, they can organize more complex structures. Now we are going to do some fixation exercises to consolidate the knowledge acquired previously! 😉
 
-  let car = {
-    type: "Fiat",
-    model: "500",
-    color: "white",
-  };
+1. Create an object ``player`` containing the variables below
 
-  Agora vamos fazer alguns exercícios de fixação para consolidarmos os conhecimentos adquiridos no video anterior! 😉
+    ```javascript
+    let name = 'Marta';
+    let lastName = 'Silva';
+    let age = 34;
+    let medals = { golden: 2, silver: 3 };
+    ```
 
-  Crie um objeto player contendo as variáveis listadas abaixo.
+2. Access the key ``name``, ``lastName`` and ``age``. Concatenate the information to run ``console.log()`` in the following format: “A jogadora Marta Silva tem 34 anos de idade”
+3. Add to the object the key ``bestInTheWorld`` e attribute to it an array containing the dates in which the player Marta was considered the best in the world.
 
-  let name = 'Marta';
-  let lastName = 'Silva';
-  let age = 34;
-  let medals = { golden: 2, silver: 3 };
+    ```javascript
+    let bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
+    ```
 
-  Acesse a chave name , lastName e age . Concatene as informações para fazer um console.log no seguinte formato: "A jogadora Marta Silva tem 34 anos de idade".
+4. Access the key ``bestInTheWorld`` and run ``console.log()`` in the following format: “A jogadora Marta Silva foi eleita a melhor jogadora do mundo por 6 vezes”
+5. Access the key medals and run ``console.log()`` in the following format: “A jogadora possui 2 medalhas de ouro e 3 medalhas de prata”
 
-  Adicione ao objeto a chave bestInTheWorld e atribua a esta chave um array contendo as datas em que a jogadora Marta foi considerada a melhor do mundo.
+### Fuctions
 
-  let bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
+What about practicing a little?
+Get each one of the exercises form the day 4.2 and make the all to be functions from the same file. The variables defined in the beginning of the program must bo converted into function parameters.
 
-  Acesse a chave bestInTheWorld e faça um console.log no seguinte formato: "A jogadora Marta Silva foi eleita a melhor do mundo por 6 vezes".
+## Exercises
 
-  Acesse a chave medals e faça um console.log no seguinte formato: "A jogadora possui 2 medalhas de ouro e 3 medelhas de prata".
-  Agora veremos uma variação do laço for , que nos garante facilidade ao lidar com objetos.
+### Part I - Objects anf For/in
 
-#### Funções
+Using the object below, do the exercises:
 
-Que tal praticar um pouco?
-
-Pegue cada um dos exercícios da primeira parte das nossas aulas de JavaScript e faça com que todos eles sejam funções de um mesmo arquivo. As variáveis que você define no começo de cada arquivo devem ser removidas e transformadas em parâmetros das funções. Por exemplo:
-
-O programa...
-
-// Adição
-let a = 5;
-let b = 2;
-
-a + b;
-... se transforma em:
-
-function sum(a, b) {
-  return a + b;
-}
-
-### Exercícios
-
-#### Parte I - Objetos e For/In
-
-  Usando o objeto abaixo, faça os exercícios a seguir:
-  
+  ```javascript
   let info = {
     personagem: "Margarida",
     origem: "Pato Donald",
     nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
   };
-  
-  1- Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome.
-  
-    Valor esperado no console: Bem-vinda, Margarida
-  
-  2- Insira no objeto uma nova propriedade com o nome de chave "recorrente" e o valor "Sim" e, em seguida, imprima o objeto no console.
-  
-    Valor esperado no console:
-  
-      {
-        personagem: 'Margarida',
-        origem: 'Pato Donald',
-        nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-        recorrente: 'Sim'
-      };
-  
-  3- Faça um for/in que mostre todas as chaves do objeto.
-  
-    Valor esperado no console:
-  
-      personagem
-      origem
-      nota
-      recorrente
-  
-  4- Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto.
-  
-    Valor esperado no console:
-  
-      Margarida
-      Pato Donald
-      Namorada do personagem principal nos quadrinhos do Pato Donald
-      Sim
-  
-  5- Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178", "O último MacPatinhas", "Sim".
-    
-    Valor esperado no console:
-    
-      Margarida e Tio Patinhas
-      Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
-      Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
-      Ambos recorrentes // Atenção para essa última linha!
+  ```
 
-#### Parte II - Funções
+1. Print a console welcoming message for the character above, including its name:
 
-  Agora vamos fazer um exercício que vai deixar claro como funções com responsabilidades bem definidas deixam o código mais bem escrito.
-  
-  1- Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
-    
-    Exemplo de palíndromo: arara .
-    verificaPalindrome("arara") ;
-    Retorno esperado: true
-    verificaPalindrome("desenvolvimento") ;
-    Retorno esperado: false
-  
-  2- Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
-  
-    Array de teste: [2, 3, 6, 7, 10, 1]; .
-    Valor esperado no retorno da função: 4 .
-  
-  3- Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
-    
-    Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
-    Valor esperado no retorno da função: 6 .
-  
-  4- Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
-  
-    Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
-    Valor esperado no retorno da função: Fernanda .
-  
-  5- Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
-    Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
-    Valor esperado no retorno da função: 2 .
-  
-  6- Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
-    
-    Valor de teste: N = 5 .
-    Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
-  
-  7- Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
-    
-    Valor de teste: "trybe" e "be"
-    Valor esperado no retorno da função: true
-    verificaFimPalavra("trybe", "be") ;
-    Retorno esperado: true
-    verificaFimPalavra("joaofernando", "fernan") ;
-    Retorno esperado: false
+    ```text
+    Bem vinda, Margarida
+    ```
 
-#### Bônus
+2. Insert in the object the key named ``recorrente`` and its value ``Sim``, then print the object on console. Expected value:
 
-  1-(Difícil) Faça um programa que receba uma string em algarismos romanos e retorne o número que a string representa.
-    Atenção! Esse exercício já apareceu no processo seletivo de uma grande multinacional!
-    Dicas:
-      Uma string é um array de caracteres, então cada elemento do array é uma letra.
-      O valor de cada numeral romano é:
-  
-      | I   | 1    |
-      | --- | ---- |
-      | IV  | 4    |
-      | V   | 5    |
-      | IX  | 9    |
-      | X   | 10   |
-      | XL  | 40   |
-      | L   | 50   |
-      | XC  | 90   |
-      | C   | 100  |
-      | CD  | 400  |
-      | D   | 500  |
-      | CM  | 900  |
-      | M   | 1000 |
+    ```javascript
+    {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+    recorrente: 'Sim'
+    };
+    ```
 
-      Que tal criar um objeto que associe cada letra a um numeral para fácil consulta?
-      Atenção! Quando você tem um número pequeno à direita de um número grande, eles devem ser somados. Exemplo: XI = 10 + 1 = 11. No entanto, se o número pequeno está à esquerda de um número maior que ele, ele deve ser subtraído. Exemplo: IX = 10 - 1 = 9.
-  
-  2- Para o próximo exercício você irá precisar ter uma conta no CodeWars , para entender como fazê-lo acesse esse o conteúdo que fizemos sobre isso. Após seguir os passos para registro acesse o desafio proposto e então clique em TRAIN , você então será redirecionado para a página onde o desafio deve ser feito. Quando tiver finalizado o exercício clique em TEST para verificar, com testes simples, se sua solução satisfaz o que foi pedido. Passando nesses testes clique em ATTEMPT , ao fazer isso seu código passará por todos os testes existentes para validação da solução. Caso sua solução esteja correta o botão SUBMIT ficará disponível, clique nele para submeter sua resposta, caso contrário volte ao seu código e veja o que ainda não está satisfazendo o que se é pedido, repita esse processo até que sua solução esteja correta.
-    
-    Desafio - 16 + 8 = 214 ;
-    Esse desafio irá exigir um pouco de conhecimento sobre alguns métodos do JavaScript, para isso pesquise quando for necessário e caso surja alguma dúvida peça ajuda no Slack . Dúvidas em como fazer uma boa pesquisa? Sem problemas! Acesse esse conteúdo sobre como pesquisar como uma pessoa desenvolvedora .
+3. Run a ``for/in`` that shows all the object keys. Expected value:
+
+    ```text
+    personagem
+    origem
+    nota
+    recorrente
+    ```
+
+4. Run a ``for/in`` that shows all the object values. Expected value:
+
+    ```text
+    personagem
+    origem
+    nota
+    recorrente
+    ```
+
+5. Define a second object wih the same structure of the first one and the following values: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178", "O último MacPatinhas", "Sim". Print both on colse like the example below:
+
+    ```text
+    Margarida e Tio Patinhas
+    Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+    Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+    Ambos recorrentes // Atenção para essa última linha!
+    ```
+
+### Part II - Functions
+
+1. Create a function that receives a string and returns ``true`` if it's a palindrome, or else returns ``false``
+2. Create a function that receives an array of integers and returns the index of the greatest value
+3. Create a function that receives an array of integers and returns the index of the lowest value
+4. Create a function that receives an array of names and returns the one with the greatest ammount of characters
+5. Create a function that receives an array of integers and returns the most repeated
+6. Create a function that receives an integer ``n`` and returns the sum of all values from 1 to ``n``
+7. Create a function that receives a ``string word`` and a ``string ending``. Check if ``string ending`` is really the ending of ``string word``. Consider that ``string ending`` will always be smaller than ``string word``
+
+### Part III - Bonus
+
+1. (Hard) Create a function that receives a string in roman algarisms and returns the arabic number that the string represents.
+2. [Dum Sum](https://www.codewars.com/kata/5effa412233ac3002a9e471d/javascript)
