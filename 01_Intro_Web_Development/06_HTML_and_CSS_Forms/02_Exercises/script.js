@@ -34,8 +34,31 @@ function createPersonalSection() {
   createFullAddress();
 }
 
-function createJobSection() {
+function createCVResumeSection() {
+  const resume = document.querySelector('#cv-resume-container');
+  const cvResume = document.querySelector('#cv-resume');
+  const newResume = document.createElement('p');
+  newResume.innerText = cvResume.value;
+  resume.appendChild(newResume);
+}
 
+function createLastJobSection() {
+  const lastJobSection = document.querySelector('#last-job-container');
+  const lastJobDescription = [
+    document.querySelector('#last-role').value,
+    document.querySelector('#beginning-date').value,
+    document.querySelector('#last-role-description').value
+  ]
+  for (let index in lastJobDescription) {
+    const newContent = document.createElement('p');
+    newContent.innerText = lastJobDescription[index];
+    lastJobSection.appendChild(newContent);
+  }
+}
+
+function createJobSection() {
+  createCVResumeSection();
+  createLastJobSection();
 }
 
 // Event Listeners
@@ -45,13 +68,14 @@ const submitButton = document.querySelector('#submit-btn');
 submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   createPersonalSection();
-  createJobScetion();
+  createJobSection();
 });
 clearButton.addEventListener('click', () => {
   const inputs = document.querySelectorAll('input');
   for (let index = 0; index < inputs.length; index += 1) {
     inputs[index].value = "";
   }
+  document.querySelector('textarea').value = "";
 });
 
 // Other Functions
