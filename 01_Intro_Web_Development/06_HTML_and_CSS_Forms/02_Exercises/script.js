@@ -9,9 +9,14 @@ const clearButton = document.querySelector('#clear-btn');
 const submitButton = document.querySelector('#submit-btn');
 
 // Event Listeners
-
 submitButton.addEventListener('click', (event) => {
   event.preventDefault();
+});
+clearButton.addEventListener('click', () => {
+  const inputs = document.querySelectorAll('input');
+  for (let index = 0; index < inputs.length; index += 1) {
+    inputs[index].value = "";
+  }
 });
 
 // Other Functions
