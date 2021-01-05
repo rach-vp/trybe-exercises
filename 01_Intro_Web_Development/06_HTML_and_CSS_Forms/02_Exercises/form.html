@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="main-title">CV Generator</h1>
+  </header>
+  <form action="" action="GET">
+    <fieldset>
+      <legend>Personal</legend>
+      <div class="info-container">
+        <div class="input-wrapper">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" max="40" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="user-email">Email:</label>
+          <input type="text" id="user-email" max="50" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="user-cpf">CPF:</label>
+          <input type="text" id="user-cpf" max="11" required>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="input-wrapper">
+          <label for="user-address">Address:</label>
+          <input type="text" id="user-address" max="200" required>
+        </div>
+        <div class="input-wrapper">
+        </div>
+        <div class="input-wrapper">
+          <label for="user-city">City:</label>
+          <input type="text" id="user-city" max="28" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="user-state">State:</label>
+          <input list="states-list" name="states" id="user-state" required>
+          <datalist id="states-list">
+            <!-- Other options inserted via JS -->
+          </datalist>
+        </div>
+        <div class="input-wrapper">
+          <label>Residence type:</label>
+          <div class="radio-container">
+            <input type="radio" id="house-typed" name="resid-type" value="House" required><label for="house-typed">House</label>
+            <input type="radio" id="flat-typed" name="resid-type" value="Flat" required><label for="flat-typed">Flat</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Previous Job</legend>
+      <div class="info-container">
+        <div class="input-wrapper">
+          <label for="cv-resume">CV Resume:</label>
+          <textarea id="cv-resume" max="1000" cols="75" required></textarea>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="input-wrapper">
+          <label for="last-role">Last Role:</label>
+          <input type="text" id="last-role" max="40" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="last-role-description">Last Role Description:</label>
+          <input type="text" id="last-role-description" max="500" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="beginning-date">Beginning Date:</label>
+          <input type="date" id="beginning-date" required>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <div class="btns-container">
+    <button type="submit" id="submit-btn">Submit</button>
+    <button id="clear-btn">Clear all</button>
+  </div>
+  <section class="cv-container">
+    <header id="cv-header"></header>
+    <section id="other-info-container"></section>
+    <section id="address-container"></section>
+    <section id="cv-resume-container"></section>
+    <section id="last-job-container"></section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
