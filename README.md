@@ -50,7 +50,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 06 - HTML and CSS: Forms, Flexbox ans Responsivity
 
 - [x] 6.1 - HTML and CSS: Forms
-- [ ] 6.2 - JavaScript Libs and CSS Frameworks
+- [x] 6.2 - JavaScript Libs and CSS Frameworks
 - [ ] 6.3 - Flexbox: Part 1
 - [ ] 6.4 - Flexbox: Part 2
 - [ ] 6.5 - Responsivity: Mobile First
