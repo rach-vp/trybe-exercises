@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="main-title">CV Generator</h1>
+  </header>
+  <form action="" action="GET">
+    <fieldset class="border">
+      <legend>Personal</legend>
+      <div class="row">
+        <div class="col">
+          <label for="full-name">Full Name:</label>
+          <input class="form-control" type="text" id="full-name" max="40" required>
+        </div>
+        <div class="col">
+          <label for="user-email">Email:</label>
+          <input class="form-control" type="text" id="user-email" max="50" required>
+        </div>
+        <div class="col">
+          <label for="user-cpf">CPF:</label>
+          <input class="form-control" type="text" id="user-cpf" max="11" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="user-address">Address:</label>
+          <input class="form-control" type="text" id="user-address" max="200" required>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+          <label for="user-city">City:</label>
+          <input class="form-control" type="text" id="user-city" max="28" required>
+        </div>
+        <div class="col">
+          <label for="user-state">State:</label>
+          <input class="form-control" list="states-list" name="states" id="user-state" required>
+          <datalist id="states-list">
+            <!-- Other options inserted via JS -->
+          </datalist>
+        </div>
+        <div class="col">
+          <label>Residence type:</label>
+          <input class="form-control form-check-input" type="radio" id="house-typed" name="resid-type" value="House" required>
+          <label class="form-check-label" for="house-typed">House</label>
+          <input class="form-control form-check-input" type="radio" id="flat-typed" name="resid-type" value="Flat" required>
+          <label class="form-check-label" for="flat-typed">Flat</label>
+          <!-- <div >
+          </div> -->
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="border">
+      <legend>Previous Job</legend>
+      <div class="row">
+        <div class="col">
+          <label for="cv-resume">CV Resume:</label>
+          <textarea class="form-control" id="cv-resume" max="1000" cols="75" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="last-role">Last Role:</label>
+          <input class="form-control" type="text" id="last-role" max="40" required>
+        </div>
+        <div class="col">
+          <label for="last-role-description">Last Role Description:</label>
+          <input class="form-control" type="text" id="last-role-description" max="500" required>
+        </div>
+        <div class="col">
+          <label for="beginning-date">Beginning Date:</label>
+          <input class="form-control" type="date" id="beginning-date" required>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <div class="col">
+    <button type="submit" id="submit-btn">Submit</button>
+    <button id="clear-btn">Clear all</button>
+  </div>
+  <section class="cv-container">
+    <header id="cv-header"></header>
+    <section id="other-info-container"></section>
+    <section id="address-container"></section>
+    <section id="cv-resume-container"></section>
+    <section id="last-job-container"></section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
