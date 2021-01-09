@@ -69,19 +69,22 @@ article p {
 }
 
 footer {
+  align-items: center;
   background-color: #000;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   padding: 1em 0;
   margin-top: 1em;
 }
 
 .footer-divider {
   margin: 0 1em;
+  width: 45%;
 }
 
 .footer-divider:first-child h3 {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .footer-divider:first-child p {
@@ -93,4 +96,18 @@ footer {
   font-style: italic;
   text-align: justify;
   text-indent: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  main {
+    margin: 0 10%;
+  }
+
+  footer {
+    padding: 1em 2em;
+  }
 }
