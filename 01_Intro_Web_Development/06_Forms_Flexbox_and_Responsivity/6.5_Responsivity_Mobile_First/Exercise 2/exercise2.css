@@ -67,3 +67,30 @@ article p {
   text-align: justify;
   text-indent: 2em;
 }
+
+footer {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+
+.footer-divider {
+  margin: 0 1em;
+}
+
+.footer-divider:first-child h3 {
+  margin-bottom: 1em;
+}
+
+.footer-divider:first-child p {
+  text-align: center;
+}
+
+.footer-divider:last-child p {
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: justify;
+  text-indent: 2em;
+}
