@@ -56,3 +56,14 @@ main {
   line-height: 1.25em;
   list-style-type: none;
 }
+
+article h1 {
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+article p {
+  text-align: justify;
+  text-indent: 2em;
+}
