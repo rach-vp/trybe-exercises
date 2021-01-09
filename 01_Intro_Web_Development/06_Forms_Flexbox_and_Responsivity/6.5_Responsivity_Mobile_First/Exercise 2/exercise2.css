@@ -111,3 +111,17 @@ footer {
     padding: 1em 2em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size:  22px;
+  }
+
+  main {
+    margin: 0 15%;
+  }
+
+  article p {
+    line-height: 1.5em;
+  }
+}
