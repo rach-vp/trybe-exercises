@@ -18,6 +18,10 @@ body {
   font-size: 16px;
 }
 
+ul {
+  padding: 0;
+}
+
 header {
   background-color: #000;
   padding: 1em;
@@ -34,5 +38,21 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  padding: 0;
+}
+
+main {
+  margin: 0 5%;
+}
+
+.list-info-container {
+  margin-bottom: 1em;
+}
+
+.list-info-container > h2 {
+  margin-bottom: 1em;
+}
+
+.list-info-container ul li {
+  line-height: 1.25em;
+  list-style-type: none;
 }
