@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3- Part 2</title>
+</head>
+<body>
+  <button>Click here!</button>
+  <h4>Times clicked:</h4>
+  <p></p>
+  <script>
+    let clickNumber = 0;
+    const text = document.querySelector('p');
+    const button = document.querySelector('button');
+    button.addEventListener('click', () => text.innerText = clickNumber += 1);
+  </script>
+</body>
+</html>
