@@ -59,7 +59,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 07 - Intro to ES6 and Unit Tests
 
 - [x] 7.1 - ES6: let, const, arrow functions and template literals
-- [ ] 7.2 - ES6: Objects
+- [x] 7.2 - ES6: Objects
 - [ ] 7.3 - JavaScript Unit Tests
 - [ ] 7.4 - Project: JavaScript Unit Tests
 
