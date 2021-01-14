@@ -17,3 +17,9 @@ assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 3), [1, 2, 4, 5]);
 
 //03. Test above doesn't return [1, 2, 3, 4]
 assert.notDeepStrictEqual(myRemove([1, 2, 3, 4, 5], 3), [1, 2, 3, 4]);
+
+//04. Test if arr was changed
+assert.notDeepStrictEqual(myRemove([1, 2, 3, 4, 5], 3), [1, 2, 3, 4, 5]);
+
+//05. item = 3, newArr = [1, 2, 3, 4]
+assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 5), [1, 2, 3, 4]);
