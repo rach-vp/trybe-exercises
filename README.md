@@ -54,13 +54,13 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 6.3 - Flexbox: Part 1
 - [x] 6.4 - Flexbox: Part 2
 - [x] 6.5 - Responsivity: Mobile First
-- [ ] 6.6 - Project: Facebook Login Page
+- [x] 6.6 - Project: Facebook Login Page
 
 ### Block 07 - Intro to ES6 and Unit Tests
 
 - [x] 7.1 - ES6: let, const, arrow functions and template literals
 - [x] 7.2 - ES6: Objects
-- [ ] 7.3 - JavaScript Unit Tests
+- [x] 7.3 - JavaScript Unit Tests
 - [ ] 7.4 - Project: JavaScript Unit Tests
 
 ### Block 08 - ES6 Higher Order Functions
