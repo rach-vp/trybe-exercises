@@ -61,11 +61,11 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 7.1 - ES6: let, const, arrow functions and template literals
 - [x] 7.2 - ES6: Objects
 - [x] 7.3 - JavaScript Unit Tests
-- [ ] 7.4 - Project: JavaScript Unit Tests
+- [x] 7.4 - [Project: JavaScript Unit Tests](https://github.com/tryber/sd-09-project-js-unit-tests/pull/57)
 
 ### Block 08 - ES6 Higher Order Functions
 
-- [ ] 8.1 - ES6: forEach, find, some, every, sort
+- [x] 8.1 - ES6: forEach, find, some, every, sort
 - [ ] 8.2 - ES6: map and filter
 - [ ] 8.3 - ES6: reduce
 - [ ] 8.4 - ES6: spread operator, rest parameter, destructing, etc
