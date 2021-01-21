@@ -68,7 +68,8 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 8.1 - ES6: forEach, find, some, every, sort
 - [x] 8.2 - ES6: map and filter
 - [x] 8.3 - ES6: reduce
-- [ ] 8.4 - ES6: spread operator, rest parameter, destructing, etc
+- [x] 8.4 - ES6: spread operator, rest parameter, destructing, etc
+- [ ] 8.5 - Project: Zoo functions
 
 ### Block 09 - Asynchronous JavaScript and Promises
 
