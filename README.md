@@ -54,7 +54,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 6.3 - Flexbox: Part 1
 - [x] 6.4 - Flexbox: Part 2
 - [x] 6.5 - Responsivity: Mobile First
-- [x] 6.6 - Project: Facebook Login Page
+- [x] 6.6 - [Project: Facebook Login Page](https://rach-vp.github.io/trybe-projects/08-facebook-signup/index.html)
 
 ### Block 07 - Intro to ES6 and Unit Tests
 
