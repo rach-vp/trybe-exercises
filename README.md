@@ -69,17 +69,17 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 8.2 - ES6: map and filter
 - [x] 8.3 - ES6: reduce
 - [x] 8.4 - ES6: spread operator, rest parameter, destructing, etc
-- [ ] 8.5 - Project: Zoo functions
+- [x] 8.5 - [Project: Zoo functions](https://github.com/tryber/sd-09-project-zoo-functions/pull/57)
 
 ### Block 09 - Asynchronous JavaScript and Promises
 
-- [ ] 9.1 - Asynchronous JavaScript and Callbacks
-- [ ] 9.2 - JavaScript Promises
-- [ ] 9.3 - Project: Shopping Cart
+- [x] 9.1 - Asynchronous JavaScript and Callbacks
+- [x] 9.2 - JavaScript Promises
+- [x] 9.3 - Project: Shopping Cart (creating style)
 
 ### Block 10 - Automated Tests with Jest
 
-- [ ] 10.1 - Jest First Steps
+- [x] 10.1 - Jest First Steps
 - [ ] 10.2 - Jest: Asynchronous Tests
 - [ ] 10.3 - Jest: Simulating behaviours
 - [ ] 10.4 - Project: Asynchronous Jast and Mocking
