@@ -33,7 +33,7 @@ describe('test the function getUserName', () => {
   it('should return an error message when user is not found', () => {
     expect.assertions(1);
     const wrongID = 1;
-    getUserName(wrongID)
+    return getUserName(wrongID)
       .catch(({ error }) => expect(error).toBe(`User ${wrongID} not found.`));
   });
 });
