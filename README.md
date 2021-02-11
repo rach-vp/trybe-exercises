@@ -6,7 +6,7 @@ This repository contains all learning activities developed by [Raquel Picanço](
 
 The program contains more than 1.500 hours of synchronous and asynchronous contents and covers themes about Fullstack Web Development, Computer Science, Agile and Soft Skills.
 
-## Introduction to Web Development :hourglass_flowing_sand:
+## Introduction to Web Development :heavy_check_mark:
 
 ### Block 01 - Unix, Bash and Shell Script
 
@@ -75,20 +75,20 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 
 - [x] 9.1 - Asynchronous JavaScript and Callbacks
 - [x] 9.2 - JavaScript Promises
-- [x] 9.3 - Project: Shopping Cart (creating style)
+- [x] 9.3 - Project: Shopping Cart
 
 ### Block 10 - Automated Tests with Jest
 
 - [x] 10.1 - Jest First Steps
-- [ ] 10.2 - Jest: Asynchronous Tests
-- [ ] 10.3 - Jest: Simulating behaviours
-- [ ] 10.4 - Project: Asynchronous Jast and Mocking
+- [x] 10.2 - Jest: Asynchronous Tests
+- [x] 10.3 - Jest: Simulating behaviours
+- [x] 10.4 - Project: Asynchronous Jast and Mocking
 
 ## Front-end Development :hourglass_flowing_sand:
 
 ### Block 11 - Intro to React
 
-- [ ] 11.1 - "Hello, world!" in React
+- [x] 11.1 - "Hello, world!" in React
 - [ ] 11.2 - React Components
 - [ ] 11.3 - Project: Movie Cards Library
 
