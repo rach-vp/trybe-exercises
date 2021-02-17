@@ -1,4 +1,5 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
+import Tilt from 'react-vanilla-tilt';
 import PropTypes from 'prop-types';
 import './style.css';
 
@@ -8,12 +9,12 @@ export default class Pokemon extends Component {
     const { value, measurementUnit } = averageWeight;
 
     return (
-      <section className="pokemon">
+      <Tilt className="pokemon" options={{ max: 50, speed: 500}}>
         <h4 className="pokemon__name">{name}</h4>
         <h5 className="pokemon__type" data-type={type}>{type}</h5>
         <span className="pokemon__weight">{`${value}${measurementUnit}`}</span>
         <img className="pokemon__image" src={image} alt={name} />
-      </section>
+      </Tilt>
     )
   }
 }
