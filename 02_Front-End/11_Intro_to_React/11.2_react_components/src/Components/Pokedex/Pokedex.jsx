@@ -7,16 +7,18 @@ export default class Pokedex extends Component {
     const { pokemons } = this.props;
 
     return (
-      pokemons.map(({ name, type, averageWeight, image }) =>
-        <Pokemon
-          key={name}
-          name={name}
-          type={type}
-          averageWeight={averageWeight}
-          image={image}
-        />
-      )
-    )
+      <main>
+        {pokemons.map(({ name, type, averageWeight, image }) =>
+          <Pokemon
+            key={name}
+            name={name}
+            type={type}
+            averageWeight={averageWeight}
+            image={image}
+          />
+        )}
+      </main>
+    );
   }
 }
 

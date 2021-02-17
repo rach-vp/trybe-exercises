@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
 export default class Pokemon extends Component {
-  render() {
+ render() {
     const { name, type, averageWeight, image } = this.props;
     const { value, measurementUnit } = averageWeight;
 
     return (
-      <section>
-        <h4>{ name }</h4>
-        <h5>{ type }</h5>
-        <span>{ `${value}${measurementUnit}` }</span>
-        <img src={ image } alt={ name }/>
+      <section className="pokemon">
+        <h4 className="pokemon__name">{name}</h4>
+        <h5 className="pokemon__type" data-type={type}>{type}</h5>
+        <span className="pokemon__weight">{`${value}${measurementUnit}`}</span>
+        <img className="pokemon__image" src={image} alt={name} />
       </section>
     )
   }
