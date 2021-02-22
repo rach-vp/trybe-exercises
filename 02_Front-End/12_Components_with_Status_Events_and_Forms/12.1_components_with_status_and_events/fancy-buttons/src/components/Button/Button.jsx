@@ -11,11 +11,17 @@ export default class Button extends Component {
   }
 
   render() {
-    const { index, input } = this.props;
+    const { index, input, update } = this.props;
 
     return (
       <div>
-        <button onClick={this.printOnConsole.bind(this, input)}>{`Button ${index + 1}`}</button>
+        <button
+          onClick={() => {
+            this.printOnConsole.bind(this, input);
+            update(index + 1);
+          }}>
+            {`Button ${index + 1}`}
+        </button>
       </div>
     )
   }
