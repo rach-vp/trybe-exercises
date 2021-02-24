@@ -17,8 +17,7 @@ export default class SelectState extends Component {
   }
 
   render() {
-    const { info } = this.props;
-    const { fieldName, required } = info;
+    const { fieldName, required } = this.props.info;
     const { states, loading } = this.state;
 
     return (

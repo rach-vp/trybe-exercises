@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 
 export default class TextArea extends Component {
   render() {
-    const { info } = this.props;
-    const { fieldName, maxLength, required } = info;
+    const { fieldName, maxLength, required } = this.props.info;
 
     return (
       <form>
