@@ -16,14 +16,20 @@ export default class SelectState extends Component {
     this.setState({ states, loading: false });
   }
 
+  handleChange(e) {
+    const input = e.target.value;
+    this.props.onInputChange(input, this.fieldName);
+  }
+
   render() {
     const { fieldName, required } = this.props.info;
     const { states, loading } = this.state;
+    this.fieldName = fieldName;
 
     return (
       <form>
         <label htmlFor={fieldName}>State: </label>
-        <select id={fieldName} required={required}>
+        <select id={fieldName} required={required} onChange={this.handleChange.bind(this)}>
           <option key="empty" value="">Select your state</option>
           {!loading
             ? states.map(({ nome }) =>

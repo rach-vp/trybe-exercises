@@ -12,10 +12,18 @@ export default class Fieldset extends Component {
   handleName(input) {
     this.setState({ name: input.toUpperCase() });
   }
+
+  handleState(input) {
+    this.setState({ state: input })
+  }
+
   handleInput(input, fieldName) {
     switch (fieldName) {
       case 'name':
         return this.handleName(input);
+      case 'state':
+        console.log('entrou');
+        return this.handleState(input);
       default:
         this.setState({ [fieldName]: input });
     }
@@ -32,17 +40,31 @@ export default class Fieldset extends Component {
           fields.map(field =>
             field.tag === 'input'
               ? <FormInput
+                key={field.fieldName}
+                info={field}
+                onInputChange={this.handleInput.bind(this)}
+                value={
+                  this.state[field.fieldName]
+                    ? this.state[field.fieldName] : ''
+                }
+              />
+              : field.tag === 'select' && field.fieldName === 'state'
+                ? <SelectState
                   key={field.fieldName}
                   info={field}
                   onInputChange={this.handleInput.bind(this)}
                   value={
                     this.state[field.fieldName]
-                    ? this.state[field.fieldName] : ''
-                  }
-                />
-              : field.tag === 'select' && field.fieldName === 'state'
-                ? <SelectState key={field.fieldName} info={field} />
-                : <TextArea key={field.fieldName} info={field} />
+                      ? this.state[field.fieldName] : ''
+                  } />
+                : <TextArea
+                  key={field.fieldName}
+                  info={field}
+                  onInputChange={this.handleInput.bind(this)}
+                  value={
+                    this.state[field.fieldName]
+                      ? this.state[field.fieldName] : ''
+                  } />
           )
         }
       </fieldset>
