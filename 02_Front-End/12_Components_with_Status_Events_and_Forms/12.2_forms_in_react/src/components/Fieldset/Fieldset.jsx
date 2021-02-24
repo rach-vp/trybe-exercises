@@ -13,17 +13,10 @@ export default class Fieldset extends Component {
     this.setState({ name: input.toUpperCase() });
   }
 
-  handleState(input) {
-    this.setState({ state: input })
-  }
-
   handleInput(input, fieldName) {
     switch (fieldName) {
       case 'name':
         return this.handleName(input);
-      case 'state':
-        console.log('entrou');
-        return this.handleState(input);
       default:
         this.setState({ [fieldName]: input });
     }
