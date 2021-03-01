@@ -7,6 +7,7 @@ class App extends Component {
     this.state = {
        loading: true,
        url: '',
+       terrier: false,
     }
     this.fetchDog = this.fetchDog.bind(this);
   }
@@ -14,16 +15,33 @@ class App extends Component {
   fetchDog() {
     return fetch('https://dog.ceo/api/breeds/image/random')
       .then(response => response.json())
-      .then(({ message }) => this.setState({ url: message, loading: false }))
+      .then(({ message }) => {
+        this.setState(
+          { loading: true, terrier: false },
+          () => {
+            if (message.includes('terrier')) {
+              console.log(message);
+              this.setState({ terrier: true, loading: false });
+            } else {
+              this.setState({ url: message, loading: false });
+            }
+            localStorage.setItem('url', message);
+            const breed = message.split('/')[4];
+            alert(breed.replace('-', ' '));
+          }
+        )
+      })
       .catch(({ message }) => console.log(message));
   }
 
   componentDidMount() {
-    this.fetchDog()
+    this.fetchDog();
   }
 
   render() {
-    const { loading, url } = this.state;
+    const { loading, url, terrier } = this.state;
+    const loadingComponent = <div>loading...</div>
+    const noTerriersComponent = <div>Uh oh! Terriers are forbidden D=</div>
 
     return (
       <div className="App">
@@ -31,8 +49,10 @@ class App extends Component {
         <br />
         {
           loading
-          ? <div>loading...</div>
-          : <img src={ url } alt="Some cute doggo <3" />
+          ? loadingComponent
+          : terrier
+            ? noTerriersComponent
+            : <img src={ url } alt="Some cute doggo <3" style={{ width: "500px" }} />
         }
       </div>
     );
