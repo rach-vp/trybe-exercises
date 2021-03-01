@@ -89,14 +89,14 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 11 - Intro to React
 
 - [x] 11.1 - "Hello, world!" in React
-- [ ] 11.2 - React Components
-- [ ] 11.3 - Project: Movie Cards Library
+- [x] 11.2 - React Components
+- [x] 11.3 - Project: Movie Cards Library
 
 ### Block 12 - Components with status, Events and Forms with React
 
-- [ ] 12.1 - Components with status and events
-- [ ] 12.2 - Forms in React
-- [ ] 12.3 - Project: Movie Cards Library Stateful
+- [x] 12.1 - Components with status and events
+- [x] 12.2 - Forms in React
+- [x] 12.3 - Project: Movie Cards Library Stateful
 
 ### Block 13 - Component Life Cycle and React Router
 
