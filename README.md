@@ -92,15 +92,15 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 11.2 - React Components
 - [x] 11.3 - Project: Movie Cards Library
 
-### Block 12 - Components with status, Events and Forms with React
+### Block 12 - Components with state, Events and Forms with React
 
-- [x] 12.1 - Components with status and events
+- [x] 12.1 - Components with state and events
 - [x] 12.2 - Forms in React
 - [x] 12.3 - Project: Movie Cards Library Stateful
 
 ### Block 13 - Component Life Cycle and React Router
 
-- [ ] 13.1 - Component Life Cycle
+- [x] 13.1 - Component Life Cycle
 - [ ] 13.2 - React Router
 - [ ] 13.3 - Project: Movie Cards Library CRUD
 
