@@ -101,17 +101,17 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 13 - Component Life Cycle and React Router
 
 - [x] 13.1 - Component Life Cycle
-- [ ] 13.2 - React Router
-- [ ] 13.3 - Project: Movie Cards Library CRUD
+- [x] 13.2 - React Router
+- [x] 13.3 - Project: Movie Cards Library CRUD
 
 ### Block 14 - Agile Methods
 
-- [ ] 14.1 - Agile Methods
-- [ ] 14.2 - Project: Front-end Online Store
+- [x] 14.1 - Agile Methods
+- [x] 14.2 - Project: Front-end Online Store
 
 ### Block 15 - Automated Tests with React Testing Library
 
-- [ ] 15.1 - RTL: First Steps
+- [x] 15.1 - RTL: First Steps
 - [ ] 15.2 - RTL: Mocks and Inputs
 - [ ] 15.3 - RTL: Testing React Router
 - [ ] 15.4 - Project: Tests in React
