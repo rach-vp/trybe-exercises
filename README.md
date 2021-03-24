@@ -114,11 +114,11 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 15.1 - RTL: First Steps
 - [ ] 15.2 - RTL: Mocks and Inputs
 - [ ] 15.3 - RTL: Testing React Router
-- [ ] 15.4 - Project: Tests in React
+- [x] 15.4 - Project: Tests in React
 
-### Block 16 - Status Management with Redux
+### Block 16 - State Management with Redux
 
-- [ ] 16.1 - Intro to Redux: Overall Application Status
+- [x] 16.1 - Intro to Redux: Overall Application State
 - [ ] 16.2 - Using Redux in React
 - [ ] 16.3 - Using Redux in React: Practice
 - [ ] 16.4 - Using Redux in React: Asynchronous Actions
