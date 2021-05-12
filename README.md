@@ -119,9 +119,9 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 16 - State Management with Redux
 
 - [x] 16.1 - Intro to Redux: Overall Application State
-- [ ] 16.2 - Using Redux in React
+- [x] 16.2 - Using Redux in React
 - [ ] 16.3 - Using Redux in React: Practice
-- [ ] 16.4 - Using Redux in React: Asynchronous Actions
+- [x] 16.4 - Using Redux in React: Asynchronous Actions
 - [ ] 16.5 - Tests in React-Redux
 - [x] 16.6 - Project: Trybe Wallet
 
