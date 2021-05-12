@@ -123,28 +123,28 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [ ] 16.3 - Using Redux in React: Practice
 - [ ] 16.4 - Using Redux in React: Asynchronous Actions
 - [ ] 16.5 - Tests in React-Redux
-- [ ] 16.6 - Project: Trybe Wallet
+- [x] 16.6 - Project: Trybe Wallet
 
 ### Block 17 - Trivia Game Project
 
-- [ ] 17.1 - Project: Trivia Game
+- [x] 17.1 - Project: Trivia Game
 
 ### Block 18 - Context API and React Hooks
 
 - [ ] 18.1 - React Context API
 - [ ] 18.2 - React Hooks: useState and useContext
 - [ ] 18.3 - React Hooks: useEffects and customized Hooks
-- [ ] 18.4 - Project: Star Wars Datatable with Context API and Hooks
+- [x] 18.4 - Project: Star Wars Datatable with Context API and Hooks
 
 ### Block 19 - Recipe App Project
 
-- [ ] 19.1 - Project: Recipe App
+- [x] 19.1 - Project: Recipe App
 
 ## Back-end Development :hourglass_flowing_sand:
 
 ### Block 20 - Intro to SQL
 
-- [ ] 20.1 - SQL Database
+- [x] 20.1 - SQL Database
 - [ ] 20.2 - Finding data in a database
 - [ ] 20.3 - Filtering data
 - [ ] 20.4 - Handling tables

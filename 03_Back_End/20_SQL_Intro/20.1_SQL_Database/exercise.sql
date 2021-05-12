@@ -1,0 +1,32 @@
+-- Exercise 1 : Find a codeless way to search in any table using MySQL Workbench.
+--
+-- Go to Schemas. All loaded tables are listed there. Right click on the table of your choice > "Select rows"
+--
+-- Exercise 2 : Find a codeless way to create a new table using MySQL Workbench.
+--
+-- Right click on a Schema > "Create table"
+--
+-- Exercise 3 : Create a table with the following constraints:
+-- Table name: Movie
+-- Columns:
+-- MovieId - primary key, type int, autoincrement 1 each time a new value is inserted;
+-- Description - nulls are not allowed, type text (varchar(100));
+-- ReleaseYear - nulls are not allowed, type int;
+-- Note - nulls are allowed, type int;
+--
+--
+-- Exercise 4 : Analyse the table sakila.city and find which table the column country_id makes reference.
+--
+-- country_id uses column id from table country as foreign key
+--
+-- Exercise 5 : After solving the previous problem, think: which relationship type table city has with table country?
+--
+-- N:1
+--
+-- Exercise 6 : Which is the relationship type among table country and table city?
+-- 1:N
+--
+-- Exercise 7 : Open table by table on sakila database and find at least 3 examples of 1:N or N:1 relationships.
+--
+-- actor -> film, city -> country, category -> film
+--
