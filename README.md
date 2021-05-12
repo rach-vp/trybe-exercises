@@ -84,7 +84,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 10.3 - Jest: Simulating behaviours
 - [x] 10.4 - Project: Asynchronous Jast and Mocking
 
-## Front-end Development :hourglass_flowing_sand:
+## Front-end Development :heavy_check_mark:
 
 ### Block 11 - Intro to React
 
@@ -92,7 +92,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 11.2 - React Components
 - [x] 11.3 - Project: Movie Cards Library
 
-### Block 12 - Components with state, Events and Forms with React
+### Block 12 - Stateful components, Events and Forms with React
 
 - [x] 12.1 - Components with state and events
 - [x] 12.2 - Forms in React
