@@ -145,7 +145,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 20 - Intro to SQL
 
 - [x] 20.1 - SQL Database
-- [ ] 20.2 - Finding data in a database
+- [x] 20.2 - Finding data in a database
 - [ ] 20.3 - Filtering data
 - [ ] 20.4 - Handling tables
 - [ ] 20.5 - Project: All For One
