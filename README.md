@@ -146,9 +146,9 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 
 - [x] 20.1 - SQL Database
 - [x] 20.2 - Finding data in a database
-- [ ] 20.3 - Filtering data
+- [x] 20.3 - Filtering data
 - [ ] 20.4 - Handling tables
-- [ ] 20.5 - Project: All For One
+- [x] 20.5 - Project: All For One
 
 ### Block 21 - SQL Functions, Joins and Subqueries
 
