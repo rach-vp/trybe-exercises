@@ -152,7 +152,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 
 ### Block 21 - SQL Functions, Joins and Subqueries
 
-- [ ] 21.1 - Most used functions in SQL
+- [x] 21.1 - Most used functions in SQL
 - [ ] 21.2 - Uncomplicating JOINs, UNIONs and Subqueries
 - [ ] 21.3 - Stores Routines and Stored Functions
 - [ ] 21.4 - Project: Vocabulary Booster
