@@ -153,14 +153,14 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 21 - SQL Functions, Joins and Subqueries
 
 - [x] 21.1 - Most used functions in SQL
-- [ ] 21.2 - Uncomplicating JOINs, UNIONs and Subqueries
+- [x] 21.2 - Uncomplicating JOINs, UNIONs and Subqueries
 - [ ] 21.3 - Stores Routines and Stored Functions
-- [ ] 21.4 - Project: Vocabulary Booster
+- [x] 21.4 - Project: Vocabulary Booster
 
 ### Block 22 - Databases Normalization and Modeling
 
-- [ ] 22.1 - Turning ideas into a database model
-- [ ] 22.2 - Normalization, Normal Formsand Dumps
+- [x] 22.1 - Turning ideas into a database model
+- [ ] 22.2 - Normalization, Normal States and Dumps
 - [ ] 22.3 - Turning ideas into a database model: Part 2
 - [ ] 22.4 - Project: One For All
 
