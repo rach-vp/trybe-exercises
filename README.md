@@ -160,13 +160,13 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 22 - Databases Normalization and Modeling
 
 - [x] 22.1 - Turning ideas into a database model
-- [ ] 22.2 - Normalization, Normal States and Dumps
-- [ ] 22.3 - Turning ideas into a database model: Part 2
-- [ ] 22.4 - Project: One For All
+- [x] 22.2 - Normalization, Normal States and Dumps
+- [x] 22.3 - Turning ideas into a database model: Part 2
+- [x] 22.4 - Project: One For All
 
 ### Block 23 - Intro to MongoDB
 
-- [ ] 23.1 - Intro to MongoDB
+- [x] 23.1 - Intro to MongoDB
 - [ ] 23.2 - Filter Operators
 - [ ] 23.3 - Project: Data Flights
 
