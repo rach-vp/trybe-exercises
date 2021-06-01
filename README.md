@@ -167,7 +167,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 23 - Intro to MongoDB
 
 - [x] 23.1 - Intro to MongoDB
-- [ ] 23.2 - Filter Operators
+- [x] 23.2 - Filter Operators
 - [ ] 23.3 - Project: Data Flights
 
 ### Block 24 - MongoDB: Simple and Complex Updates

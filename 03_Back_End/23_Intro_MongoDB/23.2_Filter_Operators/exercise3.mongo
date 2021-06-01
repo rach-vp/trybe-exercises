@@ -1,0 +1,6 @@
+// Return the amount of heroes with height lower than 1.80m
+db.superheroes.countDocuments({
+  "aspects.height": {
+    $lt: 180,
+  },
+});

@@ -1,0 +1,6 @@
+// Select the heroes that are not humans and are shorter than 1.80.
+db.superheroes
+  .find({
+    $nor: [{ race: "human" }, { "aspects.height": { $gt: 180 } }],
+  })
+  .pretty();

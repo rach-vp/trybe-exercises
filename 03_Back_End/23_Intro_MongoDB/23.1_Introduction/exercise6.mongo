@@ -1,1 +1,2 @@
+// Return 2 documents from the collection bios skipping th first 5 documents
 db.bios.find({}).skip(5).limit(2).pretty();

@@ -1,0 +1,9 @@
+// Select all the heroes with height lower than 1.80m.
+// Remember that this information is stored in centimeters
+db.superheroes
+  .find({
+    "aspects.height": {
+      $lt: 180,
+    },
+  })
+  .pretty();

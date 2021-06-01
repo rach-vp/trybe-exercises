@@ -1,3 +1,6 @@
+// Skip 5 documentsand show the attributes _id, title,
+// authors and status of the books with status "MEAP",
+// limiting to 10 documents
 db.books
   .find({ status: "MEAP" }, { title: 1, authors: 1, status: 1 })
   .skip(5)

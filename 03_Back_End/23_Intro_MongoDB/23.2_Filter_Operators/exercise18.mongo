@@ -1,0 +1,4 @@
+// Delete a single document published by Sony Pictures
+db.superheroes.deleteOne({
+  publisher: "Sony Pictures",
+});

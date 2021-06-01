@@ -1,1 +1,2 @@
+// Return the document with _id equal to 8
 db.bios.find({ _id: 8 });
