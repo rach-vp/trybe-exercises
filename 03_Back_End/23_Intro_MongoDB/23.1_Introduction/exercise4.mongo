@@ -1,1 +1,2 @@
+// Return all documents in which the attribute name.first is equal to John, using pretty
 db.bios.find({ "name.first": "John" }).pretty();

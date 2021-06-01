@@ -1,1 +1,2 @@
+// Return the 3 first documents from the collection bios using pretty()
 db.bios.find({}).limit(3).pretty();

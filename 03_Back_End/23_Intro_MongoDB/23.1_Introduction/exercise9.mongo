@@ -1,3 +1,5 @@
+// Show the attributes title, isbn and pageCount of the 3 first books.
+// DO NOT show the attribute _id
 db.books
   .find({}, { _id: 0, title: 1, isbn: 1, pageCount: 1 })
   .limit(3)

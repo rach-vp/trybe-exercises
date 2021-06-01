@@ -1,1 +1,2 @@
+// Return the document with _id equal to 8, but show only the attributes _id and name
 db.bios.find({ _id: 8 }, { name: 1 });

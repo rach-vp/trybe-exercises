@@ -1,1 +1,2 @@
+// Return onlyy the attributes name and birth of the document which the _id is equal to 8
 db.bios.find({ _id: 8 }, { _id: 0, name: 1, birth: 1 });

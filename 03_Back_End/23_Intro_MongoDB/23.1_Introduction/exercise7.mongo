@@ -1,1 +1,2 @@
+// Return the amount of documents form the collection books
 db.books.count();
