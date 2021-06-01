@@ -1,0 +1,4 @@
+// Select all the heroes that has green eyes
+db.superheroes.find({
+  "aspects.eyeColor": "green",
+});

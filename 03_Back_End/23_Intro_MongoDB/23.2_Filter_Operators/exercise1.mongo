@@ -1,0 +1,3 @@
+// Inspect a document so you can get used to its structure.
+// Understand the fields and levels that exist in them.
+db.superheroes.findOne({});

@@ -1,0 +1,4 @@
+// Return the amount of heroes with blue eyes
+db.superheroes.countDocuments({
+  "aspects.eyeColor": "blue",
+});

@@ -1,0 +1,4 @@
+// Return the amount of documents that not contains the field "race"
+db.superheroes.find({
+  race: { $exists: false },
+});

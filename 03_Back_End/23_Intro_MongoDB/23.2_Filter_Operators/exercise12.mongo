@@ -1,0 +1,8 @@
+// Using the operator $not, return the amount of heroes that are shorter than 1.80m
+db.superheroes.countDocuments({
+  "aspects.height": {
+    $not: {
+      $gt: 180,
+    },
+  },
+});

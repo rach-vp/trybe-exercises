@@ -1,0 +1,7 @@
+// Return the amount of heroes that aren't bald or hasn't dark hair
+// Return the amount of heroes with dark hair ou bald
+db.superheroes.countDocuments({
+  "aspects.hairColor": {
+    $nin: ["black", "No Hair"],
+  },
+});

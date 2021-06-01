@@ -1,0 +1,6 @@
+// Select one heroe with 2m of height or taller
+db.superheroes.findOne({
+  "aspects.height": {
+    $gte: 200,
+  },
+});

@@ -1,0 +1,11 @@
+// Select all the heroes with 1.80m or 2.00m of height and that are published by Marvel Comics
+db.superheroes
+  .find({
+    $and: [
+      {
+        $or: [{ "aspects.height": 180 }, { "aspects.height": 200 }],
+      },
+      { publisher: "Marvel Comics" },
+    ],
+  })
+  .pretty();
