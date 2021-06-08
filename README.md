@@ -168,11 +168,11 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 
 - [x] 23.1 - Intro to MongoDB
 - [x] 23.2 - Filter Operators
-- [ ] 23.3 - Project: Data Flights
+- [x] 23.3 - Project: Data Flights
 
 ### Block 24 - MongoDB: Simple and Complex Updates
 
-- [ ] 24.1 - Simple Updates
+- [x] 24.1 - Simple Updates
 - [ ] 24.2 - Complex Updates: Arrays - Part 1
 - [ ] 24.3 - Complex Updates: Arrays - Part 2
 - [ ] 24.4 - Project: eCommerce
