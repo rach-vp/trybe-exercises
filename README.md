@@ -173,7 +173,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 ### Block 24 - MongoDB: Simple and Complex Updates
 
 - [x] 24.1 - Simple Updates
-- [ ] 24.2 - Complex Updates: Arrays - Part 1
+- [x] 24.2 - Complex Updates: Arrays - Part 1
 - [ ] 24.3 - Complex Updates: Arrays - Part 2
 - [ ] 24.4 - Project: eCommerce
 
