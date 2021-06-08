@@ -1,0 +1,7 @@
+db.xmen.updateMany(
+  { class: { $exists: 0 } },
+  {
+    $inc: { power: -100 },
+    $currentDate: { lastUpdated: { $type: "timestamp" } },
+  }
+);
