@@ -1,0 +1,10 @@
+// Group the clients by gender.
+// Return the total of clients of each gender in the field total
+db.clientes.aggregate([
+  {
+    $group: {
+      _id: "$sexo",
+      total: { $sum: 1 },
+    },
+  },
+]);

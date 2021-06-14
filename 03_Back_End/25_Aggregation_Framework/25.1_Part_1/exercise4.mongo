@@ -1,0 +1,11 @@
+// count how many clients are from the state of SC exists in the collection.
+// Return a document in which the field _id contains the UF and another field with the total.
+db.clientes.aggregate([
+  { $match: { "endereco.uf": "SC" } },
+  {
+    $group: {
+      _id: "SC",
+      totalClientes: { $sum: 1 },
+    },
+  },
+]);

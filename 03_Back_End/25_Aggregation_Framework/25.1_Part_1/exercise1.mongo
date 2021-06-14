@@ -1,0 +1,2 @@
+// Using the stage $match, write a aggregation to return only the clients from gender MASCULINO
+db.clientes.aggregate([{ $match: { sexo: "MASCULINO" } }]);

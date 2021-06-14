@@ -1,0 +1,13 @@
+// Using the stage $match, write a aggregation to return only the clients from gender FEMININO and with birth date between the years of 1995 and 2005, limiting the amoun of results to 5
+db.clientes.aggregate([
+  {
+    $match: {
+      sexo: "FEMININO",
+      dataNascimento: {
+        $gte: ISODate("1995-01-01"),
+        $lte: ISODate("2005-12-31"),
+      },
+    },
+  },
+  { $limit: 5 },
+]);
