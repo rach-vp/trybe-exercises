@@ -175,12 +175,12 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 - [x] 24.1 - Simple Updates
 - [x] 24.2 - Complex Updates: Arrays - Part 1
 - [x] 24.3 - Complex Updates: Arrays - Part 2
-- [ ] 24.4 - Project: eCommerce
+- [x] 24.4 - Project: Commerce
 
 ### Block 25 - MongoDB: Aggregation Framework
 
-- [ ] 25.1 - Aggregation Framework: Part 1
-- [ ] 25.2 - Aggregation Framework: Part 2
+- [x] 25.1 - Aggregation Framework: Part 1
+- [x] 25.2 - Aggregation Framework: Part 2
 - [ ] 25.3 - Project: Aggregations
 
 ### Block 26 - Intro to Development with NodeJS
