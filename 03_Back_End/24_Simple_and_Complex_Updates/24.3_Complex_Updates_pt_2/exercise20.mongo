@@ -1,0 +1,4 @@
+// Using the operator $text, search for movies which contains the word "vacation"
+db.movies.find({
+  $text: { $search: "vacation" },
+});

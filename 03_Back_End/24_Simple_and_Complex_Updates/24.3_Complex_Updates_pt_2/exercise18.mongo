@@ -1,0 +1,6 @@
+// Using the operator $regex, return the movies that description ends with "humanity."
+db.movies.find({
+  description: {
+    $regex: /humanity.$/,
+  },
+});

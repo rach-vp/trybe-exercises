@@ -1,0 +1,2 @@
+// Create an index of kind text in the field description
+db.movies.createIndex({ description: "text" });

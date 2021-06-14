@@ -1,0 +1,5 @@
+// Return all the movies that contains "action" in the array "category" and has "imdbRating" greater than 7
+db.movies.find({
+  category: { $all: ["action"] },
+  imdbRating: { $gt: 7 },
+});

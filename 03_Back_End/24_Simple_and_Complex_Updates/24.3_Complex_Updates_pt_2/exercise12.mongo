@@ -1,0 +1,10 @@
+// Return the movie of he category sci-fi or that has ratings bigger than 199, showing only the fields title, ratings  and category.
+db.movies.find(
+  {
+    $or: [
+      { category: { $all: ["sci-fi"] } },
+      { ratings: { $elemMatch: { $gt: 199 } } },
+    ],
+  },
+  { _id: 0, title: 1, ratings: 1, category: 1 }
+);

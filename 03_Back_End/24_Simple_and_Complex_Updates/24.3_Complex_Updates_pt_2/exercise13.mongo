@@ -1,0 +1,6 @@
+// Return the movies in which the array ratings has the size of 4 and the category is adventure or family, but has imdbRating lower than 7
+db.movies.find({
+  ratings: { $size: 4 },
+  category: { $in: ["adventure", "family"] },
+  imdbRating: { $gte: 7 },
+});
