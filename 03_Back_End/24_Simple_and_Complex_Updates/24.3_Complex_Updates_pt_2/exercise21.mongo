@@ -1,0 +1,4 @@
+// Using the operator $text, search for movies which contains the words "monstrous" and "criminal"
+db.movies.find({
+  $text: { $search: "monstrous criminal" },
+});

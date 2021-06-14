@@ -1,0 +1,5 @@
+// Search the movies wich the module 5 of the field budget is 0 and the array category has length equal to 2.
+db.movies.find({
+  budget: { $mod: [5, 0] },
+  category: { $size: 2 },
+});

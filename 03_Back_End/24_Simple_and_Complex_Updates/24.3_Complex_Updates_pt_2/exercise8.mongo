@@ -1,0 +1,8 @@
+// Return the movies from the category adventure and with ratings bigger than 103, showing only the fields title, ratings and category.
+db.movies.find(
+  {
+    category: { $all: ["adventure"] },
+    ratings: { $elemMatch: { $gt: 103 } },
+  },
+  { _id: 0, title: 1, ratings: 1, category: 1 }
+);

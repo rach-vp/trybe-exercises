@@ -1,0 +1,13 @@
+// Return all the movies with ratings between 64 and 105 and divisible by 9, showing only the fiels title and ratings.
+db.movies.find(
+  {
+    ratings: {
+      $elemMatch: {
+        $gte: 64,
+        $lte: 105,
+        $mod: [9, 0],
+      },
+    },
+  },
+  { _id: 0, title: 1, ratings: 1 }
+);

@@ -1,0 +1,13 @@
+// Add the field descritption to the movie Batman with the following value:
+// "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation."
+db.movies.updateOne(
+  { title: "Home Alone" },
+  {
+    $set: {
+      description:
+        "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
+    },
+  }
+);
+
+db.movies.findOne({ title: "Home Alone" });

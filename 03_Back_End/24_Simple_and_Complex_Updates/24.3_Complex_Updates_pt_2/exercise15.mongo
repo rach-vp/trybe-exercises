@@ -1,0 +1,13 @@
+// Add the field descritption to the movie Batman with the following value:
+// "The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity."
+db.movies.updateOne(
+  { title: "Godzilla" },
+  {
+    $set: {
+      description:
+        "The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity.",
+    },
+  }
+);
+
+db.movies.findOne({ title: "Godzilla" });
