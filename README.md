@@ -181,7 +181,7 @@ The program contains more than 1.500 hours of synchronous and asynchronous conte
 
 - [x] 25.1 - Aggregation Framework: Part 1
 - [x] 25.2 - Aggregation Framework: Part 2
-- [ ] 25.3 - Project: Aggregations
+- [x] 25.3 - Project: Aggregations
 
 ### Block 26 - Intro to Development with NodeJS
 
