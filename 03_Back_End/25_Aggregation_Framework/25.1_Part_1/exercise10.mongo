@@ -1,0 +1,16 @@
+// Find out how many clients have bought more than 5 times.
+// Return a document that contains only the field clientes with the total of clients
+db.vendas.aggregate([
+  {
+    $group: {
+      _id: "$clienteId",
+      total: { $sum: 1 },
+    },
+  },
+  {
+    $match: {
+      total: { $gt: 5 },
+    },
+  },
+  { $count: "totalClientes" },
+]);

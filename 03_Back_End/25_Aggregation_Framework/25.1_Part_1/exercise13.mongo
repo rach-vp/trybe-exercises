@@ -1,0 +1,47 @@
+// find out the amount of sales and the average of sales of each state in 2019.
+// Sort de the results by the name of the state.
+// Return the documents if the following format.
+/*
+{
+  "uf": "MG",
+  "mediaVendas": 9407.129225352113,
+  "totalVendas": 142
+}
+*/
+db.vendas
+  .aggregate([
+    {
+      $match: {
+        dataVenda: {
+          $gte: ISODate("2019-01-01"),
+          $lte: ISODate("2019-12-31"),
+        },
+      },
+    },
+    {
+      $lookup: {
+        from: "clientes",
+        localField: "clienteId",
+        foreignField: "clienteId",
+        as: "cliente",
+      },
+    },
+    {
+      $group: {
+        _id: "$cliente.endereco.uf",
+        totalVendas: { $sum: 1 },
+        mediaVendas: { $avg: "$valorTotal" },
+      },
+    },
+    { $unwind: "$_id" },
+    {
+      $project: {
+        _id: 0,
+        totalVendas: 1,
+        mediaVendas: 1,
+        uf: "$_id",
+      },
+    },
+    { $sort: { uf: 1 } },
+  ])
+  .pretty();

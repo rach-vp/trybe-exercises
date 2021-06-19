@@ -1,0 +1,48 @@
+// Find out the three most buyers UFs in 2019.
+// Return the documents in the following format:
+/*
+{
+  "totalVendas": 10,
+  "uf": "SP"
+}
+*/
+db.vendas.findOne({});
+
+db.clientes.findOne({});
+
+db.vendas
+  .aggregate([
+    {
+      $match: {
+        dataVenda: {
+          $gte: ISODate("2019-01-01"),
+          $lte: ISODate("2019-12-31"),
+        },
+      },
+    },
+    {
+      $lookup: {
+        from: "clientes",
+        localField: "clienteId",
+        foreignField: "clienteId",
+        as: "cliente",
+      },
+    },
+    {
+      $group: {
+        _id: "$cliente.endereco.uf",
+        total: { $sum: 1 },
+      },
+    },
+    { $sort: { total: -1 } },
+    { $limit: 3 },
+    { $unwind: "$_id" },
+    {
+      $project: {
+        _id: 0,
+        totalVendas: "$total",
+        uf: "$_id",
+      },
+    },
+  ])
+  .pretty();
